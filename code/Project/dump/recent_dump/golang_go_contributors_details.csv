@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_Contributor_Name,Number_of_Commits,Email_ID,Git_Score,Hireable,Followers,Type_of_User,number of additions,number of deletions
+MDQ6VXNlcjEwNDAzMA==,Russ Cox,474,rsc@swtch.com,10379,False,10376,User,2169452,1607154
+MDQ6VXNlcjg1Mjg5NzU=,Robert Griesemer,151,,3641,False,3640,User,625850,369709
+MDQ6VXNlcjQzMjQ1MTY=,Rob Pike,51,,11225,False,11225,User,273883,244085
+MDQ6VXNlcjMxOTQzMzM=,Ian Lance Taylor,389,ian@airs.com,2157,False,2155,User,142486,72329
+MDQ6VXNlcjI2MjE=,Brad Fitzpatrick,438,brad@danga.com,12585,False,12244,User,286760,379276
+MDQ6VXNlcjI2ODgzMTU=,Austin Clements,106,,1835,False,1830,User,342466,178694
+MDQ6VXNlcjM4MzQ5,Matthew Dempsky,13,matthew@dempsky.org,908,False,887,User,227081,199815
+MDQ6VXNlcjY4ODk1MDQ=,Keith Randall,143,keithr@alum.mit.edu,498,False,498,User,404820,268212
+MDQ6VXNlcjE0MTE5OTI5,,109,,318,False,312,User,895271,827652
+MDQ6VXNlcjY3NDk2,Josh Bleecher Snyder,50,josharian@gmail.com,1207,False,1156,User,269612,358400
+MDQ6VXNlcjg0NDY2MTM=,Andrew Gerrand,1,adg@golang.org,1461,False,1458,User,80767,75872
+MDQ6VXNlcjEzNTY1Mg==,Minux Ma,0,,796,False,543,User,104520,20185
+MDQ6VXNlcjEwOTUzMjg=,Dmitry Vyukov,491,,2639,False,2592,User,69513,32283
+MDQ6VXNlcjk3OTY2MjE=,Alex Brainman,4,,250,False,250,User,39660,19399
+MDQ6VXNlcjE5MzM5OTk=,Yorman,0,,237,True,236,User,53196,31717
+MDQ6VXNlcjQzMDQ3NjQ=,Cuong Manh Le,269,cuong.manhle.vn@gmail.com,1194,True,420,User,22408,16863
+MDQ6VXNlcjEyNDg2Njg=,Michael Knyszek,300,,263,False,263,User,100313,41027
+MDQ6VXNlcjUzOTcwOA==,Tobias Klauser,390,,931,False,631,User,85798,85520
+MDQ6VXNlcjEyMjgwMTcy,Than McIntosh,63,,157,False,151,User,97312,37072
+MDQ6VXNlcjEyMjUyOTQ=,Filippo Valsorda,565,github@filippo.io,9417,False,8098,User,1842716,1173540
+MDQ6VXNlcjU3MTQ0Mzgw,Robert Findley,312,,56,False,52,User,117722,103500
+MDQ6VXNlcjIxMjAz,Adam Langley,29,,1548,False,1528,User,101986,43575
+MDQ6VXNlcjk5NjcxNzA=,Ken Thompson,0,,4373,False,4373,User,69176,22516
+MDQ6VXNlcjE5Mjg5OTk=,David Chase,52,,175,False,158,User,118674,46247
+MDQ6VXNlcjcxNzE=,Dave Cheney,17,,6756,False,6633,User,21871,14105
+MDQ6VXNlcjEyOTMxODc=,Michael Pratt,145,,665,False,563,User,80878,28731
+MDQ6VXNlcjg1NjUyMzI=,Nigel Tao,184,nigeltao@golang.org,312,False,312,User,64464,50707
+MDQ6VXNlcjM1NzY1NDk=,Daniel Martí,859,mvdan@mvdan.cc,2536,False,2396,User,29112,54415
+MDQ6VXNlcjgxNDI3Njk=,Joel Sing,52,,146,False,139,User,120665,18712
+MDQ6VXNlcjE2NDcwMDUz,Michael Matloob,125,,95,False,92,User,108957,51561

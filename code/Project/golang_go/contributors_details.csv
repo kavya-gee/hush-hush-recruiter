@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjEwNDAzMA==,rsc,Russ Cox,476,rsc@swtch.com,FALSE,10377,User,2169452,1607154,0,0,0,0,1596,1474
+MDQ6VXNlcjg1Mjg5NzU=,griesemer,Robert Griesemer,151,,FALSE,3642,User,625850,369709,0,0,0,0,786,703
+MDQ6VXNlcjQzMjQ1MTY=,robpike,Rob Pike,51,,FALSE,11227,User,273883,244085,0,0,0,0,316,280
+MDQ6VXNlcjMxOTQzMzM=,ianlancetaylor,Ian Lance Taylor,391,ian@airs.com,FALSE,2157,User,142486,72329,0,0,0,0,374,317
+MDQ6VXNlcjI2MjE=,bradfitz,Brad Fitzpatrick,440,brad@danga.com,FALSE,12252,User,286760,379276,0,0,0,0,1517,1314
+MDQ6VXNlcjI2ODgzMTU=,aclements,Austin Clements,106,,FALSE,1830,User,342466,178694,0,0,0,0,242,193
+MDQ6VXNlcjM4MzQ5,mdempsky,Matthew Dempsky,13,matthew@dempsky.org,FALSE,887,User,227081,199815,0,0,0,0,530,407
+MDQ6VXNlcjY4ODk1MDQ=,randall77,Keith Randall,143,keithr@alum.mit.edu,FALSE,498,User,404820,268212,0,0,0,6,332,279
+MDQ6VXNlcjE0MTE5OTI5,cherrymui,,109,,FALSE,312,User,895271,827652,0,0,0,0,187,151
+MDQ6VXNlcjY3NDk2,josharian,Josh Bleecher Snyder,50,josharian@gmail.com,FALSE,1157,User,269612,358400,0,0,0,0,820,599
+MDQ6VXNlcjg0NDY2MTM=,adg,Andrew Gerrand,1,adg@golang.org,FALSE,1458,User,80767,75872,1,0,1,0,177,164
+MDQ6VXNlcjEzNTY1Mg==,minux,Minux Ma,0,,FALSE,543,User,104520,20185,0,0,0,0,186,167
+MDQ6VXNlcjEwOTUzMjg=,dvyukov,Dmitry Vyukov,491,,FALSE,2592,User,69513,32283,0,0,0,0,646,594
+MDQ6VXNlcjk3OTY2MjE=,alexbrainman,Alex Brainman,4,,FALSE,250,User,39660,19399,0,0,0,0,334,316
+MDQ6VXNlcjE5MzM5OTk=,cixtor,Yorman,0,,TRUE,236,User,53196,31717,0,0,0,0,1,1
+MDQ6VXNlcjQzMDQ3NjQ=,cuonglm,Cuong Manh Le,270,cuong.manhle.vn@gmail.com,TRUE,420,User,22408,16863,0,0,0,0,70,62
+MDQ6VXNlcjEyNDg2Njg=,mknyszek,Michael Knyszek,300,,FALSE,263,User,100313,41027,0,0,0,0,221,173
+MDQ6VXNlcjUzOTcwOA==,tklauser,Tobias Klauser,395,,FALSE,631,User,85798,85520,0,0,0,1,39,36
+MDQ6VXNlcjEyMjgwMTcy,thanm,Than McIntosh,65,,FALSE,151,User,97312,37072,0,0,0,0,138,113
+MDQ6VXNlcjEyMjUyOTQ=,FiloSottile,Filippo Valsorda,566,github@filippo.io,FALSE,8101,User,1842716,1173540,0,0,0,0,334,252
+MDQ6VXNlcjU3MTQ0Mzgw,findleyr,Robert Findley,312,,FALSE,52,User,117722,103500,0,0,0,0,594,486
+MDQ6VXNlcjIxMjAz,agl,Adam Langley,30,,FALSE,1529,User,101986,43575,0,0,0,0,23,21
+MDQ6VXNlcjk5NjcxNzA=,ken,Ken Thompson,0,,FALSE,4373,User,69176,22516,0,0,0,0,0,0
+MDQ6VXNlcjE5Mjg5OTk=,dr2chase,David Chase,52,,FALSE,158,User,118674,46247,0,0,0,0,85,67
+MDQ6VXNlcjcxNzE=,davecheney,Dave Cheney,17,,FALSE,6634,User,21871,14105,0,0,0,0,297,284
+MDQ6VXNlcjEyOTMxODc=,prattmic,Michael Pratt,145,,FALSE,563,User,80878,28731,1,0,1,0,263,144
+MDQ6VXNlcjg1NjUyMzI=,nigeltao,Nigel Tao,184,nigeltao@golang.org,FALSE,313,User,64464,50707,0,0,0,0,40,35
+MDQ6VXNlcjM1NzY1NDk=,mvdan,Daniel Martí,867,mvdan@mvdan.cc,FALSE,2396,User,29112,54415,0,0,0,0,380,270
+MDQ6VXNlcjgxNDI3Njk=,4a6f656c,Joel Sing,52,,FALSE,139,User,120665,18712,0,0,0,0,82,63
+MDQ6VXNlcjE2NDcwMDUz,matloob,Michael Matloob,125,,FALSE,92,User,108957,51561,0,0,0,0,69,43

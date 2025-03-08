@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjg0NDU=,zpao,Paul O’Shannessy,49,paul@oshannessy.com,FALSE,5007,User,294160,168222,1196,1136,57,20,182,181
+MDQ6VXNlcjgxMDQzOA==,gaearon,dan,671,dan.abramov@gmail.com,FALSE,88800,User,67785,47754,1159,1012,139,1895,250,219
+MDQ6VXNlcjYzNjQ4,sebmarkbage,Sebastian Markbåge,392,sebastian@calyptus.eu,FALSE,8996,User,195124,62587,727,639,83,1661,113,87
+MDQ6VXNlcjM2MjQwOTg=,acdlite,Andrew Clark,146,hi@andrewclark.io,FALSE,14470,User,309075,184946,1159,958,197,1280,18,14
+MDQ6VXNlcjY4MjA=,sophiebits,Sophie Alpert,124,hi@sophiebits.com,FALSE,10175,User,1538772,495335,160,119,22,445,165,159
+MDQ6VXNlcjY0MjU4MjQ=,josephsavona,Joseph Savona,232,,FALSE,716,User,57582,43803,333,278,55,370,3,3
+MDQ6VXNlcjEzOTA3MDk=,poteto,lauren,1046,,FALSE,6162,User,88787,76340,456,401,55,159,0,0
+MDQ6VXNlcjk1OTU5ODU=,jimfb,Jim,0,,FALSE,379,User,182142,167925,340,290,50,1,51,51
+MDQ6VXNlcjE1MTk4NzA=,trueadm,Dominic Gannaway,388,,FALSE,4054,User,41173,16374,32,20,12,498,3,3
+MDQ6VXNlcjU2NTc2NQ==,gsathya,Sathya Gunasekaran,97,gsathya.ceg@gmail.com,FALSE,1002,User,60440,25174,156,125,31,46,1,1
+MDQ6VXNlcjI5NTk3,bvaughn,Brian Vaughn,668,brian.david.vaughn@gmail.com,FALSE,11310,User,74240,24358,132,108,18,1259,188,144
+MDQ6VXNlcjM0MjAwNDQ3,mofeiZ,,153,,FALSE,275,User,68280,8973,57,28,29,127,0,0
+MDQ6VXNlcjIzOTc0Mg==,petehunt,Pete Hunt,24,,FALSE,6035,User,93384,97825,826,738,86,0,39,39
+MDQ6VXNlcjExODQ5,kassens,Jan Kassens,123,jan@kassens.net,FALSE,750,User,41240,76057,307,241,62,263,3,3
+MDQ6VXNlcjI0NDAwODk=,rickhanlonii,Ricky,1781,,FALSE,2321,User,46828,31319,321,252,55,728,5,3
+MDQ6VXNlcjI3MTYzNjk=,gnoff,Josh Story,175,jcs.gnoff@gmail.com,FALSE,689,User,80991,35084,282,235,47,390,5,4
+MDQ6VXNlcjE5MDk1Mzk=,chenglou,Cheng Lou,130,chenglou92@gmail.com,FALSE,5891,User,5669,5218,123,72,51,0,48,47
+MDQ6VXNlcjEyMjkyMDQ3,eps1lon,"Sebastian ""Sebbie"" Silbermann",691,silbermann.sebastian@gmail.com,FALSE,1374,User,24304,11150,295,219,57,466,45,34
+MDQ6VXNlcjE5NzU5Nw==,vjeux,Christopher Chedeau,266,vjeuxx@gmail.com,TRUE,4182,User,16097,20145,201,186,13,12,16,16
+MDQ6VXNlcjI4OTAyNjY3,hoxyq,Ruslan Lesiutin,191,,FALSE,135,User,13822,6803,115,88,27,228,0,0
+MDQ6VXNlcjU1MTYx,yungsters,Timothy Yung,167,,FALSE,519,User,3324,1666,50,42,8,42,2,2
+MDQ6VXNlcjU3NTA=,benjamn,Ben Newman,58,ben@eloper.dev,FALSE,2838,User,31224,13561,74,67,7,1,8,8
+MDQ6VXNlcjI3MzU1MTQ=,lunaruan,Luna Ruan,0,lunaris.ruan@gmail.com,FALSE,835,User,22539,8771,150,122,24,200,5,4
+MDQ6VXNlcjQxMTc=,subtleGradient,Tom Aylott,223,thomas@subtlegradient.com,TRUE,891,User,17828,15778,13,11,2,0,36,36
+MDQ6VXNlcjU5MDkwNA==,nhunzaker,Nate Hunzaker,7,,FALSE,352,User,30604,4042,108,64,44,252,34,32
+MDQ6VXNlcjIzOTY3Ng==,necolas,Nicolas Gallagher,223,,FALSE,11123,User,17767,12856,101,92,9,193,6,6
+Bot Account,dependabot[bot],dependabot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjg5NjUxNzM=,jackpope,Jack Pope,67,,FALSE,175,User,10099,8905,91,82,4,163,0,0
+MDQ6VXNlcjE3MTQyNTU=,syranide,Andreas Svensson,1,,FALSE,198,User,2557,1284,131,64,67,10,75,74
+MDQ6VXNlcjEzMzUy,cpojer,Christoph Nakazawa,1099,christoph.pojer@gmail.com,FALSE,4244,User,6254,4697,42,28,14,21,4,4

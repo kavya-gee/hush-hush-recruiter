@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjkwMDY5MA==,bpasero,Benjamin Pasero,970,benjpas@microsoft.com,FALSE,2537,User,1286174,970348,2431,2268,161,2920,5572,5324
+MDQ6VXNlcjE3OTQwOTk=,jrieken,Johannes Rieken,849,jrieken@microsoft.com,FALSE,994,User,4428713,2740228,1877,1834,41,2282,3016,2840
+MDQ6VXNlcjIxOTMzMTQ=,Tyriar,Daniel Imms,2585,,FALSE,2338,User,8875409,5422486,1928,1842,86,3352,4488,4160
+MDQ6VXNlcjIyMzUw,joaomoreno,João Moreno,163,,FALSE,1255,User,1231162,1161963,628,583,45,1246,2122,2057
+MDQ6VXNlcjEyODIxOTU2,mjbvz,Matt Bierner,732,,FALSE,1067,User,1059516,614567,2194,2090,92,1386,1949,1813
+MDQ6VXNlcjEwNzQ2Njgy,sandy081,Sandeep Somavarapu,604,sasomava@microsoft.com,TRUE,841,User,401313,221423,1737,1699,38,1198,1667,1611
+MDQ6VXNlcjUwNDc4OTE=,alexdima,Alexandru Dima,139,alexdima@microsoft.com,FALSE,1021,User,1313411,628801,637,596,39,1076,1365,1308
+MDQ6VXNlcjE5MjY1ODQ=,isidorn,Isidor Nikolic,197,,FALSE,362,User,968424,429182,251,214,35,511,2447,2328
+MDQ6VXNlcjMyMzg3OA==,roblourens,Rob Lourens,689,roblou@microsoft.com,FALSE,531,User,2065,2037,1344,1299,44,1542,2292,2196
+MDQ6VXNlcjg3NjkyMA==,rebornix,Peng Lyu,277,penn.lv@gmail.com,FALSE,1175,User,2989133,2102049,749,702,43,1056,1079,1000
+MDQ6VXNlcjY0NjE0MTI=,aeschli,Martin Aeschlimann,315,martinae@microsoft.com,FALSE,402,User,2738221,2011132,623,591,29,1365,1109,1065
+MDQ6VXNlcjI5NDY0NjA3,meganrogge,Megan Rogge,865,merogge@microsoft.com,FALSE,338,User,933327,535063,1548,1407,138,1528,1253,1178
+MDQ6VXNlcjM4MjcwMjgy,alexr00,Alex Ross,648,,FALSE,494,User,583013,255998,1117,1067,48,1307,748,688
+MDQ6VXNlcjI5MzE1MjA=,hediet,Henning Dieterichs,434,notify.henning.dieterichs@live.de,FALSE,1626,User,876131,508945,1101,1066,28,604,727,567
+MDQ6VXNlcjIyMzA5ODU=,connor4312,Connor Peet,827,connor@peet.io,TRUE,671,User,682276,508237,993,981,11,834,794,735
+MDQ6VXNlcjY1NjE4ODc=,sbatten,SteVen Batten,71,sbatten@microsoft.com,FALSE,83,User,378202,257338,435,403,29,341,440,417
+MDQ6VXNlcjMzNzI5MDI=,lszomoru,Ladislau Szomoru,1245,,FALSE,459,User,62012,40986,1285,1243,41,1288,484,432
+MDQ6VXNlcjYxNDYwOTUy,aiday-mar,Aiday Marlen Kyzy,351,,TRUE,172,User,557271,341376,562,445,105,303,252,206
+MDQ6VXNlcjE4OTgxNjE=,weinand,Andre Weinand,0,weinand@mac.com,FALSE,187,User,535529,346491,18,14,4,64,1098,1083
+MDQ6VXNlcjkyMDUzODk=,chrmarti,Christof Marti,287,,FALSE,662,User,267843,284412,185,158,27,776,1024,981
+MDQ6VXNlcjI2NDQ2NDg=,TylerLeonhardt,Tyler James Leonhardt,339,,TRUE,888,User,48181,31348,716,670,44,1126,559,469
+MDQ6VXNlcjE5MzE1OTA=,dbaeumer,Dirk Bäumer,425,,FALSE,416,User,548031,698541,35,29,6,433,975,938
+MDQ6VXNlcjQ1NDQxNjY=,lramos15,Logan Ramos,130,loganramos@microsoft.com,FALSE,95,User,153994,235885,438,414,22,1517,326,309
+MDQ6VXNlcjMwMzA1OTQ1,joyceerhl,Joyce Er,453,,FALSE,340,User,38794,15167,816,785,30,968,690,621
+MDQ6VXNlcjE2ODkwNTY2,ramya-rao-a,Ramya Rao,0,,FALSE,1313,User,28411,16882,109,96,13,130,385,384
+MDQ6VXNlcjIwMTkwMTY=,amunger,Aaron Munger,399,,FALSE,25,User,275277,168358,357,329,26,328,293,256
+MDQ6VXNlcjQ0NDM5NTgz,benibenj,Benjamin Christopher Simmonds,586,,FALSE,44,User,4786,2128,581,553,24,582,201,151
+MDQ6VXNlcjcxOTk5NTg=,rzhao271,Raymond Zhao,357,,FALSE,109,User,22168,27591,540,488,51,1629,406,371
+MDQ6VXNlcjQwMzMyNDk=,octref,Pine,61,,FALSE,2109,User,121149,76074,71,62,9,37,675,657
+MDQ6VXNlcjk2NDM4Ng==,deepak1556,Robo,189,hop2deep@gmail.com,FALSE,722,User,104610,77412,440,409,27,399,209,181

@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjUwNDYzODY2,matheusfelipeog,Matheus Felipe,826,matheusfelipeog@protonmail.com,TRUE,754,User,14592,6217,9,8,1,919,3,3
+MDQ6VXNlcjE1MTM0ODg1,davemachado,Dave Machado,683,,FALSE,741,User,35615,28744,38,32,6,26,3,3
+MDQ6VXNlcjM2MTM0Njk5,pawelborkar,Pawel Borkar,150,,TRUE,257,User,530,376,7,5,2,98,5,5
+MDQ6VXNlcjI0NjEwMw==,jbrooksuk,James Brooks,136,james@alt-three.com,FALSE,2145,User,500,157,14,11,3,16,2,2
+MDQ6VXNlcjE5MTQxNjU=,marekdano,Marek Dano,133,,TRUE,203,User,222,55,6,6,0,77,5,5
+MDQ6VXNlcjM1NDA4NQ==,mikestreety,Mike Street,129,mikestreety@gmail.com,FALSE,107,User,1952,1707,0,0,0,8,3,3
+MDQ6VXNlcjE2NTU5Njg=,toddmotto,Todd Motto,99,,FALSE,9689,User,325,112,0,0,0,0,0,0
+MDQ6VXNlcjU4NTUzMzk=,yannbertrand,Yann Bertrand,86,,TRUE,178,User,119,36,2,2,0,57,3,3
+MDQ6VXNlcjE3NjAxMw==,wesbos,Wes Bos,44,wes@wesbos.com,TRUE,34136,User,145,109,27,26,1,0,0,0
+MDQ6VXNlcjI2ODE4MzA0,olekstomek,Tomasz Oleksik,41,olekstomek@gmail.com,FALSE,48,User,40,2,50,39,11,7,0,0
+MDQ6VXNlcjc1MjgwOTYw,apilayer-admin,APILayer,25,,FALSE,130,User,462,389,0,0,0,1,0,0
+MDQ6VXNlcjExNDYwNjQ1,Nirzak,Nirjas Jakilim,17,nirjas01@student.sust.edu,FALSE,137,User,187,27,11,11,0,0,0,0
+MDQ6VXNlcjE1MjQzMjY=,marijaninjo,,14,,TRUE,16,User,10,15,15,14,1,0,0,0
+MDQ6VXNlcjczMjg2MjU=,HZooly,Hugo Torzuoli,14,torzuoli.hugo@gmail.com,FALSE,111,User,11,4,0,0,0,2,0,0
+MDQ6VXNlcjEwMDI0NjE=,montogeek,Fernando Montoya,11,montogeek@gmail.com,TRUE,256,User,21,63,9,9,0,1,0,0
+MDQ6VXNlcjExMDM2MjI=,karllhughes,Karl L. Hughes,11,khughes.me@gmail.com,FALSE,328,User,101,17,4,4,0,2,3,3
+MDQ6VXNlcjk4ODI5NzI=,hardikpthv,Hardik Pithva,11,,FALSE,25,User,2853,124,5,4,1,0,0,0
+MDQ6VXNlcjExNzEzNDU1,awalthefirst,Abdul Awali,9,,TRUE,7,User,12,4,2,2,0,0,0,0
+MDQ6VXNlcjIwMzQ3MDEz,fawazahmed0,Fawaz Ahmed,9,,FALSE,0,User,9,0,10,9,1,0,1,1
+MDQ6VXNlcjYwOTc1OTY=,kanaksony,Kanak Sony,8,kanaksony@gmail.com,TRUE,15,User,8,1,15,7,7,0,0,0
+MDQ6VXNlcjc5NDM1MzA0,codewithpom,Padmashree Jha,8,codewithpom@gmail.com,TRUE,48,User,35,35,9,8,1,0,2,2
+MDQ6VXNlcjQ0Njc1Mzk0,sonali623,Sonali Patel,8,,FALSE,20,User,8,5,3,2,1,0,0,0
+MDQ6VXNlcjExOTI5OTUz,molcik,Filip Molcik,7,,TRUE,40,User,7,0,8,7,1,0,0,0
+MDQ6VXNlcjM3ODMyNDU3,CipherGirl,Hasna Hena Mow,7,,FALSE,22,User,4,8,7,7,0,1,0,0
+MDQ6VXNlcjUwODUxODg0,ChaseDurand,Chase Durand,7,,FALSE,13,User,480,287,4,3,1,0,1,1
+MDQ6VXNlcjUyMjM2NzE5,hippyaki,Akshayan Sinha,7,akshayan.sinha@gmail.com,TRUE,34,User,5,4,7,7,0,0,5,5
+MDQ6VXNlcjU5NzMxODk=,alxpez,Alex Perez,6,alexperez.dev@gmail.com,TRUE,73,User,33,26,2,2,0,1,0,0
+MDQ6VXNlcjU2Nzc5,brakmic,Harris BrakmiÃ„â€¡,6,,FALSE,215,User,5,3,5,4,1,0,0,0
+MDQ6VXNlcjIwNTU1MDgy,NaveenDA,Naveen,6,mailtomassnaveen@gmail.com,TRUE,64,User,6,0,8,6,2,0,0,0
+MDQ6VXNlcjUwOTgy,neosergio,Sergio Infante,6,raulsergio9@gmail.com,TRUE,126,User,5,4,4,4,0,1,0,0
