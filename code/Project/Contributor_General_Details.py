@@ -3,7 +3,14 @@ import csv
 import os
 
 # GitHub credentials
-TOKEN = "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"  # Replace with your GitHub token
+import configparser
+
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+TOKEN = config['github']['token'] 
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 GRAPHQL_URL = "https://api.github.com/graphql"
 
@@ -121,8 +128,8 @@ if __name__ == "__main__":
     with open('top_50_repos.csv', mode='r', encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            repo_owner = row['Repo Owner']
-            repo_name = row['Repo Name']
+            repo_owner = row['Repo_Owner']
+            repo_name = row['Repo_Name']
 
             contributors = get_contributors(repo_owner, repo_name)
             contributors = contributors[:100]  # Limit to 100 contributors

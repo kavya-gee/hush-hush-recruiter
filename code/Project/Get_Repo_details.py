@@ -1,9 +1,14 @@
 import requests
 import csv
 import time
+import configparser
 
-# GitHub credentials (use environment variables for security)
-TOKEN = "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"  # Replace with your token
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+TOKEN = config['github']['token']
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 GRAPHQL_URL = "https://api.github.com/graphql"
 

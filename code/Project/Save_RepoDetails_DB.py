@@ -1,8 +1,20 @@
 import pandas as pd
 from DB_Opr import create_table,insert_data, select_data
+import configparser
+
+
+config = configparser.ConfigParser()
+config.read('config.ini')  # Path to your config file
+
+# Extract database connection details
+db_config = config['database']
+dbname = db_config['dbname']
+user = db_config['user']
+password = db_config['password']
+host = db_config['host']
+port = db_config['port']
 
 df = pd.read_csv('top_50_repos.csv')
-
 
 Repo_columns = {
     "Repo_Name": "TEXT",
@@ -17,21 +29,23 @@ Repo_columns = {
     "Language": "TEXT"
 }
 
+
 create_table(
-    dbname="GITHUB",
-    user="postgres",
-    password="1612",
-    host="localhost",
-    port="5432",
+    dbname=dbname,
+    user=user,
+    password=password,
+    host=host,
+    port=port,
     table_name="Repos_Details",
-    columns=Repo_columns)
+    columns=Repo_columns
+)
 
 insert_data(
-    dbname="GITHUB",
-    user="postgres",
-    password="1612",
-    host="localhost",
-    port="5432",
+    dbname=dbname,
+    user=user,
+    password=password,
+    host=host,
+    port=port,
     table_name="Repos_Details",
     df=df,
     columns=list(Repo_columns.keys())
@@ -43,11 +57,11 @@ SELECT * FROM Repos_Details
 
 # Fetch data using the custom SELECT query
 df_selected = select_data(
-    dbname="GITHUB",
-    user="postgres",
-    password="1612",
-    host="localhost",
-    port="5432",
+    dbname=dbname,
+    user=user,
+    password=password,
+    host=host,
+    port=port,
     query=select_query
 )
 

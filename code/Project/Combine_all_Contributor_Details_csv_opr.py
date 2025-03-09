@@ -25,8 +25,8 @@ for index, repo in top_50_repos.iterrows():
             # Calculate Git_Score using the new formula
             git_score = (
                 (contributor['Number_of_Commits'] * 1000) +  # Commits weight = 1000
-                (contributor['number of additions'] * 1) +   # Additions weight = 1
-                (contributor['number of deletions'] * 1) +  # Deletions weight = 1
+                (contributor['number_of_additions'] * 1) +   # Additions weight = 1
+                (contributor['number_of_deletions'] * 1) +  # Deletions weight = 1
                 (contributor['PRs_Created'] * 50) +         # PRs Created weight = 50
                 (contributor['PRs_reviewed'] * 150) +        # PRs Reviewed weight = 150
                 (contributor['PRs_Merged'] * 100) +          # PRs Merged weight = 100
@@ -54,8 +54,8 @@ for index, repo in top_50_repos.iterrows():
                 'Hireable': contributor['Hireable'],
                 'Followers': contributor['Followers'],
                 'Type_of_User': contributor['Type_of_User'],
-                'number_of_additions': contributor['number of additions'],
-                'number_of_deletions': contributor['number of deletions'],
+                'number_of_additions': contributor['number_of_additions'],
+                'number_of_deletions': contributor['number_of_deletions'],
                 'PRs_Created': contributor['PRs_Created'],
                 'PRs_Merged': contributor['PRs_Merged'],
                 'PRs_Closed': contributor['PRs_Closed'],

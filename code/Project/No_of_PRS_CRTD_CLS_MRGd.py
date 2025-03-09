@@ -2,9 +2,14 @@ import csv
 import requests
 import os
 import base64
+import configparser
 
-# GitHub API token for authentication
-GITHUB_TOKEN = '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'
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+GITHUB_TOKEN = config['github']['token']
 HEADERS = {'Authorization': f'Bearer {GITHUB_TOKEN}'}
 
 # GraphQL query to fetch pull requests and their contributors
@@ -98,8 +103,8 @@ def main():
     top_repos = read_csv('Top_50_repos.csv')
     
     for repo in top_repos:
-        repo_owner = repo['Repo Owner']
-        repo_name = repo['Repo Name']
+        repo_owner = repo['Repo_Owner']
+        repo_name = repo['Repo_Name']
         contributors_file = f"{repo_owner}_{repo_name}/Contributors_details.csv"
         
         if not os.path.exists(contributors_file):

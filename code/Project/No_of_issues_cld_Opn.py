@@ -4,10 +4,17 @@ import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
+import configparser
 
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+GITHUB_TOKEN = config['github']['token']
 # Configuration
 GITHUB_API_URL = "https://api.github.com/graphql"
-GITHUB_TOKEN = "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"  # Replace with your token
+
 HEADERS = {"Authorization": f"Bearer {GITHUB_TOKEN}", "Content-Type": "application/json"}
 MAX_WORKERS = 3  # Number of threads for concurrent pro cessing
 PRINT_LOCK = Lock()  # Lock for thread-safe printing
@@ -48,7 +55,7 @@ def read_repos_from_csv():
         with open("top_50_repos.csv", "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                repos.append((row["Repo Owner"].strip(), row["Repo Name"].strip()))
+                repos.append((row["Repo_Owner"].strip(), row["Repo_Name"].strip()))
     except Exception as e:
         with PRINT_LOCK:
             print(f"Error reading repos: {str(e)}")

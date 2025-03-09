@@ -1,12 +1,20 @@
 import requests
 import csv
 import os
+import configparser
+
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+GITHUB_TOKEN = config['github']['token']
+
 
 # GitHub API endpoint
 GITHUB_API_URL = "https://api.github.com/graphql"
 
-# Your GitHub personal access token (store securely, avoid hardcoding in production)
-GITHUB_TOKEN = "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"
+
 
 # Headers for authentication
 HEADERS = {
@@ -116,8 +124,8 @@ def process_repositories(top_50_repos_csv, base_folder):
     with open(top_50_repos_csv, mode="r", encoding="utf-8") as repos_file:
         repos_reader = csv.DictReader(repos_file)
         for repo_row in repos_reader:
-            owner = repo_row["Repo Owner"]
-            repo = repo_row["Repo Name"]
+            owner = repo_row["Repo_Owner"]
+            repo = repo_row["Repo_Name"]
             contributors_folder = os.path.join(base_folder, f"{owner}_{repo}")
             contributors_csv = os.path.join(contributors_folder, "contributors_details.csv")
 
@@ -132,10 +140,10 @@ def process_repositories(top_50_repos_csv, base_folder):
                 contributors_data = list(contributors_reader)
 
             # Add new columns if they don't exist
-            if "number of additions" not in contributors_data[0]:
+            if "number_of_additions" not in contributors_data[0]:
                 for row in contributors_data:
-                    row["number of additions"] = 0
-                    row["number of deletions"] = 0
+                    row["number_of_additions"] = 0
+                    row["number_of_deletions"] = 0
 
             # Fetch additions and deletions for each contributor
             for row in contributors_data:
@@ -144,8 +152,8 @@ def process_repositories(top_50_repos_csv, base_folder):
                 print(f"Contributor: {contributor_id}, Additions: {additions}, Deletions: {deletions}")
 
                 # Update row with new data
-                row["number of additions"] = additions
-                row["number of deletions"] = deletions
+                row["number_of_additions"] = additions
+                row["number_of_deletions"] = deletions
 
             # Write updated data back to contributors_details.csv
             update_contributors_file(contributors_csv, contributors_data)

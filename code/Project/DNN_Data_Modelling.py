@@ -8,6 +8,19 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.layers import Input
 import pickle
+import configparser
+
+
+config = configparser.ConfigParser()
+config.read('config.ini')  # Path to your config file
+
+# Extract database connection details
+db_config = config['database']
+dbname = db_config['dbname']
+user = db_config['user']
+password = db_config['password']
+host = db_config['host']
+port = db_config['port']
 
 # Step 1: Read the CSV file into a DataFrame
 df = pd.read_csv('Contributors_Details_Final.csv')
@@ -86,6 +99,136 @@ engineered_features['Repo_Owner'] = df['Repo_Name']
 engineered_features['Type_of_User'] = df['Type_of_User']
 engineered_features['target'] = df['target']
 
+ 
+ 
+
+contributors_columns = {
+    "Repo_Name": "TEXT",
+    "Repo_Owner": "TEXT",
+    "Repo_URL": "TEXT",
+    "Stars": "INT",
+    "Forks": "INT",
+    "Number_of_Contributors": "INT",
+    "Language": "TEXT",
+    "Git_Contributor_ID": "TEXT",
+    "Git_UserName": "TEXT",
+    "Git_Contributor_Name": "TEXT",
+    "Number_of_Commits": "INT",
+    "Email_ID": "TEXT",
+    "Git_Score": "FLOAT",
+    "Hireable": "BOOLEAN",
+    "Followers": "INT",
+    "Type_of_User": "TEXT",
+    "number_of_additions": "INT",
+    "number_of_deletions": "INT",
+    "PRs_Created": "INT",
+    "PRs_Merged": "INT",
+    "PRs_Closed": "INT",
+    "PRs_reviewed": "INT",
+    "Issues_created": "INT",
+    "Issues_closed": "INT"
+}
+ 
+# create_table(
+#     dbname=dbname,
+    # user=user,
+    # password=password,
+    # host=host,
+    # port=port,
+#     table_name="contributors_Details",
+#     columns=contributors_columns)
+ 
+# insert_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     table_name="contributors_Details",
+#     df=df,
+#     columns=list(contributors_columns.keys())
+# )
+ 
+# select_query = """
+# SELECT * FROM contributors_Details
+# """
+ 
+# # Fetch data using the custom SELECT query
+# df_selected = select_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     query=select_query
+# )
+ 
+# # Display the fetched data
+# print("Fetched Data:")
+# print(df_selected)
+ 
+contributor_evaluation_columns = {
+    "total_contributions": "FLOAT",
+    "code_churn": "FLOAT",
+    "pr_efficiency": "FLOAT",
+    "issue_resolution_rate": "FLOAT",
+    "repo_popularity_score": "FLOAT",
+    "contributor_influence_score": "FLOAT",
+    "commit_efficiency": "FLOAT",
+    "addition_efficiency": "FLOAT",
+    "deletion_efficiency": "FLOAT",
+    "pr_quality": "FLOAT",
+    "issue_quality": "FLOAT",
+    "pr_review_participation": "FLOAT",
+    "collaboration_score": "FLOAT",
+    "Git_Score": "FLOAT",
+    "target": "INT",
+    "Type_of_User": "TEXT",
+    "Git_Contributor_ID": "TEXT",
+    "Git_UserName": "TEXT",
+    "Repo_Name": "TEXT",
+    "Repo_Owner": "TEXT"
+ }
+ 
+# create_table(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     table_name="contributor_evaluation_metrics",
+#     columns=contributor_evaluation_columns
+# )
+ 
+# insert_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     table_name="contributor_evaluation_metrics",
+#     df=engineered_features,
+#     columns=list(contributor_evaluation_columns.keys())
+# )
+ 
+# # Fetch data from contributor_evaluation_metrics table
+# select_query = """
+# SELECT * FROM contributor_evaluation_metrics;
+# """
+ 
+# df_selected = select_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     query=select_query
+# )
+ 
+# Display the fetched data
+# print("Fetched Data from contributor_evaluation_metrics:")
+# print(df_selected)
+ 
 # Step 6: Train the DNN
 # Filter rows where Type_of_User == "User"
 engineered_features = engineered_features[engineered_features['Type_of_User'] == 'User']
@@ -177,3 +320,56 @@ print(top_50_candidates[['Git_Contributor_ID', 'Git_UserName', 'combined_score',
 
 # Save the final results to a CSV file
 top_50_candidates.to_csv('top_50_candidates.csv', index=False)
+
+#print(Candidate_Rank_features.info())
+Candidate_ranks_columns = {
+    "global_rank": "BIGINT",
+    "Git_Contributor_ID": "TEXT",
+    "Git_UserName": "TEXT",
+    "Repo_Name": "TEXT",
+    "candidate_priority": "DOUBLE PRECISION",
+    "predicted_probability": "DOUBLE PRECISION",
+    "combined_score": "DOUBLE PRECISION",
+    "rank_in_repo": "DOUBLE PRECISION",      
+    "target": "DOUBLE PRECISION"
+}
+ 
+ 
+# create_table(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     table_name="Candidate_ranks",
+#     columns=Candidate_ranks_columns
+# )
+ 
+# insert_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     table_name="Candidate_ranks",
+#     df=Candidate_Rank_features,
+#     columns=list(Candidate_ranks_columns.keys())
+# )
+ 
+# # Fetch data from contributor_evaluation_metrics table
+# select_query2 = """
+# SELECT * FROM Candidate_ranks;
+# """
+ 
+# df_selected2 = select_data(
+#     dbname=dbname,
+#     user=user,
+#     password=password,
+#     host=host,
+#     port=port,
+#     query=select_query2
+# )
+ 
+# # Display the fetched data
+# print("Fetched Data from contributor_evaluation_metrics:")
+# print(df_selected2)

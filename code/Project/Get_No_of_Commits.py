@@ -2,8 +2,18 @@ import requests
 import os
 import csv
 
+import configparser
+
+# Load sensitive information from config file
+config = configparser.ConfigParser()
+config.read('Config.ini')  # Path to your config file
+
+# GitHub token from config file
+TOKEN = config['github']['token']
+
+
 # GitHub credentials (use environment variables for security)
-TOKEN = "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"  # Set your GitHub token as an environment variable
+
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 GRAPHQL_URL = "https://api.github.com/graphql"
 
@@ -71,8 +81,8 @@ def process_repositories(top_50_repos_csv, base_folder):
     with open(top_50_repos_csv, mode='r', encoding='utf-8') as repos_file:
         repos_reader = csv.DictReader(repos_file)
         for repo_row in repos_reader:
-            owner = repo_row['Repo Owner']
-            repo = repo_row['Repo Name']
+            owner = repo_row['Repo_Owner']
+            repo = repo_row['Repo_Name']
             print(f"Processing repository: {owner}/{repo}")
 
             # Path to the contributors_details.csv file
