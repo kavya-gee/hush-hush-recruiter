@@ -3,11 +3,15 @@ FROM ubuntu:22.04
 # Avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Set timezone to prevent interactive prompts
+RUN ln -fs /usr/share/zoneinfo/UTC /etc/localtime
+
 RUN apt-get update && apt-get install -y \
     python3 python3-pip \
     nodejs npm \
     postgresql postgresql-client \
     sudo curl wget git \
+    lsb-release \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -35,12 +39,13 @@ USER root
 COPY evaluators/ /evaluators/
 RUN chmod +x /evaluators/*.py /evaluators/*.js
 
+# Create and prepare workspace directory
+RUN mkdir -p /workspace && chown -R runner:runner /workspace
+WORKDIR /workspace
+
+# Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
-# Working directory for code evaluation
-RUN mkdir /workspace && chown runner:runner /workspace
-WORKDIR /workspace
 
 # Switch to the non-root user
 USER runner
