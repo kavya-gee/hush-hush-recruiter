@@ -1,0 +1,842 @@
+{% extends "core/base.html" %}
+
+{% block title %}Hiring Manager Dashboard - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div class="welcome-section">
+                <h2>Hiring Manager Dashboard</h2>
+                <p>Welcome, {{ request.user.full_name|default:request.user.username }}</p>
+            </div>
+            <div class="user-info">
+                <p>Current user: {{ current_user }}</p>
+                <p>Current date: {{ current_date }}</p>
+            </div>
+        </div>
+
+        <!-- Dashboard Summary Statistics -->
+        <div class="dashboard-stats">
+            <div class="stat-box">
+                <div class="stat-number">{{ total_candidates }}</div>
+                <div class="stat-label">Total Candidates</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">{{ invited_candidates }}</div>
+                <div class="stat-label">Invited</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">{{ in_progress_assessments }}</div>
+                <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">{{ completed_assessments }}</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">{{ scored_assessments }}</div>
+                <div class="stat-label">Scored</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">{{ accepted_for_interview }}</div>
+                <div class="stat-label">Interviews</div>
+            </div>
+        </div>
+
+        <!-- Companies Section -->
+        <div class="companies-section">
+            <h3>Companies</h3>
+            <div class="company-tags">
+                {% for company in companies %}
+                    <span class="company-tag">{{ company }}</span>
+                {% empty %}
+                    <span>No companies registered</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Candidate Management Section -->
+        <div class="management-section">
+            <div class="section-header">
+                <h3>Candidate Management</h3>
+                <a href="{% url 'core:add_candidate' %}" class="btn-primary">Add New Candidate</a>
+            </div>
+
+            <!-- Filter and Sort Controls -->
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Filter by status:</label>
+                    <div class="filter-buttons">
+                        <a href="?sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if not current_filter %}active{% endif %}">All</a>
+                        <a href="?status=INVITED&sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if current_filter == 'INVITED' %}active{% endif %}">Invited</a>
+                        <a href="?status=IN_PROGRESS&sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if current_filter == 'IN_PROGRESS' %}active{% endif %}">In Progress</a>
+                        <a href="?status=COMPLETED&sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if current_filter == 'COMPLETED' %}active{% endif %}">Completed</a>
+                        <a href="?status=SCORED&sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if current_filter == 'SCORED' %}active{% endif %}">Scored</a>
+                        <a href="?status=NO_ASSESSMENT&sort={{ current_sort }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}" class="filter-btn {% if current_filter == 'NO_ASSESSMENT' %}active{% endif %}">No Assessment</a>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Filter by interview status:</label>
+                    <div class="filter-buttons">
+                        <a href="?sort={{ current_sort }}&status={{ current_filter }}&source={{ current_source_filter }}" class="filter-btn {% if not current_interview_filter %}active{% endif %}">All</a>
+                        <a href="?sort={{ current_sort }}&status={{ current_filter }}&interview_status=PENDING&source={{ current_source_filter }}" class="filter-btn {% if current_interview_filter == 'PENDING' %}active{% endif %}">Pending</a>
+                        <a href="?sort={{ current_sort }}&status={{ current_filter }}&interview_status=ACCEPTED&source={{ current_source_filter }}" class="filter-btn {% if current_interview_filter == 'ACCEPTED' %}active{% endif %}">Accepted</a>
+                        <a href="?sort={{ current_sort }}&status={{ current_filter }}&interview_status=REJECTED&source={{ current_source_filter }}" class="filter-btn {% if current_interview_filter == 'REJECTED' %}active{% endif %}">Rejected</a>
+                    </div>
+                </div>
+                <!-- New Source Filter Section -->
+                <div class="filter-group">
+                    <label>Filter by source:</label>
+                    <div class="filter-buttons">
+                        <a href="?sort={{ current_sort }}&status={{ current_filter }}&interview_status={{ current_interview_filter }}" class="filter-btn {% if not current_source_filter %}active{% endif %}">All</a>
+                        {% for source in sources %}
+                            <a href="?sort={{ current_sort }}&status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ source.code }}" class="filter-btn {% if current_source_filter == source.code %}active{% endif %}">{{ source.name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="sort-group">
+                    <label>Sort by:</label>
+                    <div class="sort-buttons">
+                        <a href="?status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}&sort=name" class="sort-btn {% if current_sort == 'name' %}active{% endif %}">Name</a>
+                        <a href="?status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}&sort=status" class="sort-btn {% if current_sort == 'status' %}active{% endif %}">Status</a>
+                        <a href="?status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}&sort=score" class="sort-btn {% if current_sort == 'score' %}active{% endif %}">Score</a>
+                        <a href="?status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}&sort=date" class="sort-btn {% if current_sort == 'date' %}active{% endif %}">Date</a>
+                        <a href="?status={{ current_filter }}&interview_status={{ current_interview_filter }}&source={{ current_source_filter }}&sort=source" class="sort-btn {% if current_sort == 'source' %}active{% endif %}">Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Candidate Table -->
+            <div class="candidate-table-container">
+                <table class="candidate-table">
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Source</th>
+                            <th>Assessment Status</th>
+                            <th>Interview Status</th>
+                            <th>Score</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    {% for candidate in candidates %}
+        <tr>
+            <td>{{ candidate.user.full_name|default:"No Name" }}</td>
+            <td>{{ candidate.user.username }}</td>
+            <td>{{ candidate.user.email }}</td>
+            <td>{{ candidate.get_source_display }}</td>
+            <td>
+                {% if candidate.latest_assessment %}
+                    <span class="status-badge status-{{ candidate.status_color }}">
+                        {{ candidate.status_display }}
+                    </span>
+                {% else %}
+                    <span class="status-badge status-gray">No Assessment</span>
+                {% endif %}
+            </td>
+            <td>
+                {% if candidate.interview_status == 'PENDING' %}
+                    <span class="interview-badge interview-pending">Pending Decision</span>
+                {% elif candidate.interview_status == 'ACCEPTED' %}
+                    <span class="interview-badge interview-accepted">Accepted for Interview</span>
+                    {% if candidate.interview_date %}
+                        <div class="interview-date">{{ candidate.interview_date|date:"Y-m-d" }}</div>
+                    {% endif %}
+                {% elif candidate.interview_status == 'REJECTED' %}
+                    <span class="interview-badge interview-rejected">Rejected</span>
+                {% endif %}
+            </td>
+            <td>
+                {% if candidate.latest_assessment and candidate.latest_assessment.score %}
+                    <div class="score-display
+                        {% if candidate.latest_assessment.score >= 80 %}score-high
+                        {% elif candidate.latest_assessment.score >= 50 %}score-medium
+                        {% else %}score-low{% endif %}">
+                        {{ candidate.latest_assessment.score|floatformat:0 }}%
+                    </div>
+                {% elif candidate.latest_assessment and candidate.latest_assessment.status == 'SCORING' %}
+                    <div class="score-evaluating">
+                        <div class="score-spinner"></div>
+                        <span>Evaluating</span>
+                    </div>
+                {% else %}
+                    -
+                {% endif %}
+            </td>
+            <td class="action-buttons">
+                <a href="{% url 'core:view_candidate' candidate.id %}" class="btn-view">View Profile</a>
+                {% if not candidate.latest_assessment %}
+                    <a href="{% url 'core:invite_assessment' candidate.id %}" class="btn-action">
+                        Send Assessment
+                    </a>
+                {% elif candidate.latest_assessment.status == 'FINISHED' and candidate.latest_assessment.evaluation_status == 'PENDING' %}
+                    <a href="{% url 'core:trigger_evaluation' candidate.latest_assessment.id %}" class="btn-action">
+                        Evaluate
+                    </a>
+                {% elif candidate.interview_status == 'PENDING' and candidate.latest_assessment.status == 'SCORED' %}
+                    <div class="dropdown">
+                        <button class="btn-dropdown">Decision ▾</button>
+                        <div class="dropdown-content">
+                            <a href="{% url 'core:finalize_interview_decision' candidate.id 'accept' %}">Accept for Interview</a>
+                            <a href="{% url 'core:finalize_interview_decision' candidate.id 'reject' %}">Reject Candidate</a>
+                        </div>
+                    </div>
+                {% endif %}
+            </td>
+        </tr>
+    {% empty %}
+        <tr>
+            <td colspan="8" class="empty-table">
+                No candidates found. <a href="{% url 'core:add_candidate' %}">Add a candidate</a> to get started.
+            </td>
+        </tr>
+    {% endfor %}
+</tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Assessment Status Flow Section -->
+        <div class="assessment-flow-section">
+            <h3>Assessment Status Flow</h3>
+            <div class="status-flow-diagram">
+                <div class="flow-step">
+                    <div class="step-icon">📧</div>
+                    <div class="step-label">Invited</div>
+                    <div class="step-count">{{ invited_candidates }}</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-icon">👍</div>
+                    <div class="step-label">Accepted</div>
+                    <div class="step-count">{{ in_progress_assessments }}</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-icon">💻</div>
+                    <div class="step-label">In Progress</div>
+                    <div class="step-count">{{ in_progress_assessments }}</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-icon">✅</div>
+                    <div class="step-label">Completed</div>
+                    <div class="step-count">{{ completed_assessments }}</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-icon">🏆</div>
+                    <div class="step-label">Scored</div>
+                    <div class="step-count">{{ scored_assessments }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Source Distribution Section -->
+        <div class="source-distribution-section">
+            <h3>Candidate Source Distribution</h3>
+            <div class="source-tags">
+                {% for source in sources %}
+                    <a href="?source={{ source.code }}&sort={{ current_sort }}&status={{ current_filter }}&interview_status={{ current_interview_filter }}"
+                       class="source-tag {% if current_source_filter == source.code %}active{% endif %}">
+                        {{ source.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Dashboard Footer -->
+        <div class="dashboard-footer">
+            <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn-logout">Logout</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleCandidateMenu(candidateId) {
+            const menu = document.getElementById(`candidate-menu-${candidateId}`);
+
+            // Close all other open menus first
+            document.querySelectorAll('.candidate-menu.open').forEach(openMenu => {
+                if (openMenu !== menu) {
+                    openMenu.classList.remove('open');
+                }
+            });
+
+            // Toggle this menu
+            menu.classList.toggle('open');
+        }
+
+        // Close menus when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.matches('.btn-menu')) {
+                const menus = document.querySelectorAll('.candidate-menu.open');
+                menus.forEach(menu => {
+                    menu.classList.remove('open');
+                });
+            }
+        });
+    </script>
+
+    <style>
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .user-info {
+            font-size: 0.8em;
+            color: #777;
+            text-align: right;
+        }
+
+        /* Dashboard Stats */
+        .dashboard-stats {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-box {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2196f3;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Companies Section */
+        .companies-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .company-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .company-tag {
+            background: #e0e0e0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Source Distribution Section */
+        .source-distribution-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .source-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .source-tag {
+            background: #e0e0e0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.2s ease;
+        }
+
+        .source-tag:hover {
+            background: #d0d0d0;
+        }
+
+        .source-tag.active {
+            background: #2196f3;
+            color: white;
+        }
+
+        /* Management Section */
+        .management-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background: #2196f3;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Filter Controls */
+        .filter-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .filter-group, .sort-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-buttons, .sort-buttons {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn, .sort-btn {
+            padding: 5px 10px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .filter-btn.active, .sort-btn.active {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            color: #2196f3;
+        }
+
+        /* Candidate Table */
+        .candidate-table-container {
+            overflow-x: auto;
+        }
+
+        .candidate-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .candidate-table th, .candidate-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .candidate-table th {
+            background: #f9f9f9;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .candidate-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .empty-table {
+            text-align: center;
+            padding: 30px !important;
+            color: #777;
+        }
+
+        /* Status Badges */
+        .status-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .status-blue {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .status-green {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-orange {
+            background: #fff8e1;
+            color: #f57f17;
+        }
+
+        .status-red {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .status-purple {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .status-yellow {
+            background: #fffde7;
+            color: #f9a825;
+        }
+
+        .status-gray {
+            background: #f5f5f5;
+            color: #616161;
+        }
+
+        /* Score Display */
+        .score-display {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .score-high {
+            color: #2e7d32;
+        }
+
+        .score-medium {
+            color: #f57f17;
+        }
+
+        .score-low {
+            color: #c62828;
+        }
+
+        .score-evaluating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #7b1fa2;
+            font-size: 0.9em;
+        }
+
+        .score-spinner {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #7b1fa2;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .score-pill {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            font-weight: bold;
+            font-size: 0.8em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            position: relative;
+        }
+
+        .btn-action {
+            background: #2196f3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+        .btn-view {
+            background: #9e9e9e;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+        .btn-menu {
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0 8px;
+            font-size: 1em;
+        }
+
+        .candidate-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 150px;
+        }
+
+        .candidate-menu.open {
+            display: block;
+        }
+
+        .candidate-menu a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .candidate-menu a:hover {
+            background: #f5f5f5;
+        }
+
+        /* Assessment Flow Section */
+        .assessment-flow-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .status-flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 15px 0;
+        }
+
+        .flow-step {
+            text-align: center;
+            flex: 1;
+        }
+
+        .step-icon {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .step-label {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .step-count {
+            background: #e3f2fd;
+            color: #1565c0;
+            font-weight: bold;
+            display: inline-block;
+            min-width: 24px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 12px;
+        }
+
+        .flow-arrow {
+            font-size: 1.5em;
+            color: #bdbdbd;
+        }
+
+        /* Dashboard Footer */
+        .dashboard-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        .btn-logout {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .dashboard-stats {
+                flex-wrap: wrap;
+            }
+
+            .stat-box {
+                flex: 1 0 40%;
+            }
+
+            .filter-controls {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .status-flow-diagram {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .flow-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+    .interview-badge {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+
+    .interview-pending {
+        background: #f5f5f5;
+        color: #616161;
+    }
+
+    .interview-accepted {
+        background: #e8f5e9;
+        color: #2e7d32;
+    }
+
+    .interview-rejected {
+        background: #ffebee;
+        color: #c62828;
+    }
+
+    .interview-date {
+        font-size: 0.8em;
+        color: #555;
+        margin-top: 3px;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .btn-dropdown {
+        background: #2196f3;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.8em;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 10px 12px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f5f5f5;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .btn-dropdown {
+        background-color: #0b7dda;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .dashboard-stats {
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            flex: 1 0 40%;
+        }
+
+        .filter-controls {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .status-flow-diagram {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .flow-arrow {
+            transform: rotate(90deg);
+        }
+    }
+    </style>
+{% endblock %}

@@ -1,0 +1,273 @@
+{% extends "core/base.html" %}
+
+{% block title %}Choose Question - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <div class="question-selection-container">
+        <div class="selection-header">
+            <h2>Choose Your Coding Challenge</h2>
+            <div class="timer-info">
+                <div class="timer">
+                    Assessment time: <span class="countdown">24:00:00</span> remaining
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-instructions">
+            <div class="alert info">
+                <p><strong>Important:</strong> Please review all questions before making your selection. Once you choose a question, you cannot change it.</p>
+            </div>
+        </div>
+
+        <div class="questions-list">
+            {% for question in questions %}
+                <div class="question-card" data-type="{{ question.question_type|lower }}">
+                    <div class="question-header">
+                        <h3>{{ question.title }}</h3>
+                        <div class="question-meta">
+                            <span class="question-type {{ question.question_type|lower }}">{{ question.get_question_type_display }}</span>
+                            <span class="question-difficulty {{ question.difficulty|lower }}">{{ question.get_difficulty_display }}</span>
+                        </div>
+                    </div>
+
+                    <div class="question-preview">
+                        {{ question.description|truncatewords:50 }}
+                    </div>
+
+                    <div class="question-actions">
+                        <button class="btn-view-details" onclick="toggleQuestionDetails('{{ question.id }}')">View Details</button>
+                        <form method="post" class="select-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="question_id" value="{{ question.id }}">
+                            <button type="submit" class="btn-select">Select This Question</button>
+                        </form>
+                    </div>
+
+                    <div id="details-{{ question.id }}" class="question-details" style="display: none;">
+                        <div class="markdown-content">
+                            {{ question.description|linebreaks }}
+                        </div>
+
+                        {% if question.example_input or question.example_output %}
+                            <div class="examples">
+                                <h4>Examples:</h4>
+                                {% if question.example_input %}
+                                    <div class="example">
+                                        <div class="example-title">Input:</div>
+                                        <pre>{{ question.example_input }}</pre>
+                                    </div>
+                                {% endif %}
+
+                                {% if question.example_output %}
+                                    <div class="example">
+                                        <div class="example-title">Output:</div>
+                                        <pre>{{ question.example_output }}</pre>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+
+                        {% if question.constraints %}
+                            <div class="constraints">
+                                <h4>Constraints:</h4>
+                                <div class="markdown-content">
+                                    {{ question.constraints|linebreaks }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% empty %}
+                <div class="no-questions">
+                    <p>No questions are available for this assessment. Please contact support.</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="selection-footer">
+            <a href="{% url 'core:candidate_dashboard' %}" class="btn-secondary">Back to Dashboard</a>
+            <div class="session-info">
+                <p>Session: {{ current_user }} | {{ current_date }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleQuestionDetails(questionId) {
+            const details = document.getElementById(`details-${questionId}`);
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                // Hide all other question details
+                document.querySelectorAll('.question-details').forEach(el => {
+                    if (el.id !== `details-${questionId}`) {
+                        el.style.display = 'none';
+                    }
+                });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+
+    <style>
+        .question-selection-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .selection-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .timer-info {
+            font-size: 1.1em;
+            color: #f57f17;
+            font-weight: bold;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .info {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            border: 1px solid #bbdefb;
+        }
+        .questions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .question-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .question-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .question-meta {
+            display: flex;
+            gap: 10px;
+        }
+        .question-type, .question-difficulty {
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .question-type.frontend {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .question-type.backend {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+        .question-type.database {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+        .question-difficulty.easy {
+            background-color: #f1f8e9;
+            color: #558b2f;
+        }
+        .question-difficulty.medium {
+            background-color: #fff8e1;
+            color: #ff8f00;
+        }
+        .question-difficulty.hard {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .question-preview {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .question-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-view-details {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-select {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .question-details {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .markdown-content {
+            line-height: 1.6;
+        }
+        .examples, .constraints {
+            margin-top: 15px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .example-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        pre {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .selection-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .session-info {
+            color: #777;
+            font-size: 0.8em;
+        }
+        .btn-secondary {
+            background: #9e9e9e;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .no-questions {
+            text-align: center;
+            padding: 40px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+{% endblock %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Application Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #616161;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Update on Your Application</h1>
+    </div>
+
+    <div class="content">
+        <p>Hello {{ candidate_name }},</p>
+
+        <p>Thank you for taking the time to complete our coding assessment and for your interest in joining {{ company_name }}.</p>
+
+        <p>After careful consideration, we have decided not to move forward with your application at this time. While your profile has many strengths, we are pursuing candidates whose experience more closely aligns with our current requirements.</p>
+
+        <p>We value your privacy, and in accordance with our data protection policies, we will be removing your assessment data and personal information from our system.</p>
+
+        <p>We appreciate your interest in {{ company_name }} and wish you the best in your job search.</p>
+
+        <p>Best regards,<br>
+        The Hiring Team at {{ company_name }}</p>
+    </div>
+
+    <div class="footer">
+        <p>If you have any questions, please contact us at {{ contact_email }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,627 @@
+{% extends "core/base.html" %}
+{% load candidate_filters %}
+
+{% block title %}Candidate Profile - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <div class="profile-container">
+        <div class="header">
+            <h2>Candidate Profile</h2>
+            <div class="actions">
+                <a href="{% url 'core:manager_dashboard' %}" class="btn-secondary">Back to Dashboard</a>
+                <a href="{% url 'core:edit_candidate' candidate.id %}" class="btn-primary">Edit Profile</a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    {{ candidate.user.full_name|slice:":1"|default:"?" }}
+                </div>
+                <div class="profile-title">
+                    <h3>{{ candidate.user.full_name|default:"No Name" }}</h3>
+                    <p class="profile-email">{{ candidate.user.email }}</p>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <div class="detail-section">
+                    <h4>Personal Information</h4>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Full Name:</span>
+                            <span class="detail-value">{{ candidate.user.full_name|default:"Not provided" }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Username:</span>
+                            <span class="detail-value">{{ candidate.user.username }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">{{ candidate.user.email }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">{{ candidate.phone|default:"Not provided" }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">{{ candidate.location|default:"Not provided" }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h4>Professional Information</h4>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Current Role:</span>
+                            <span class="detail-value">{{ candidate.current_role|default:"Not provided" }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">LinkedIn:</span>
+                            <span class="detail-value">
+                                {% if candidate.linkedin_url %}
+                                    <a href="{{ candidate.linkedin_url }}" target="_blank">View Profile</a>
+                                {% else %}
+                                    Not provided
+                                {% endif %}
+                            </span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">GitHub:</span>
+                            <span class="detail-value">
+                                {% if candidate.github_url %}
+                                    <a href="{{ candidate.github_url }}" target="_blank">View Profile</a>
+                                {% else %}
+                                    Not provided
+                                {% endif %}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h4>Recruitment Information</h4>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Source:</span>
+                            <span class="detail-value">{{ candidate.get_source_display }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Source Score:</span>
+                            <span class="detail-value">{{ candidate.source_score|default:"Not provided" }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Added on:</span>
+                            <span class="detail-value">{{ candidate.created_at|date:"Y-m-d" }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section full-width">
+                    <h4>Skills</h4>
+                    <div class="skills-container">
+                        {% if candidate.skills %}
+                            {% with skills_list=candidate.skills|split:"," %}
+                                {% for skill in skills_list %}
+                                    <span class="skill-tag">{{ skill|strip }}</span>
+                                {% endfor %}
+                            {% endwith %}
+                        {% else %}
+                            <p>No skills provided</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="detail-section full-width">
+                    <h4>Notes</h4>
+                    <div class="notes-container">
+                        {% if candidate.notes %}
+                            <p>{{ candidate.notes }}</p>
+                        {% else %}
+                            <p>No notes available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="interview-decision-section">
+    <h3>Interview Decision</h3>
+
+    {% if candidate.interview_status == 'PENDING' %}
+        <div class="decision-pending">
+            <p>No decision has been made yet for this candidate.</p>
+            <div class="decision-actions">
+                <a href="{% url 'core:finalize_interview_decision' candidate.id 'accept' %}" class="btn-accept">Accept for Interview</a>
+                <a href="{% url 'core:finalize_interview_decision' candidate.id 'reject' %}" class="btn-reject">Reject Candidate</a>
+            </div>
+        </div>
+    {% elif candidate.interview_status == 'ACCEPTED' %}
+        <div class="decision-accepted">
+            <div class="decision-status">
+                <span class="status-icon">✓</span>
+                <span class="status-text">Accepted for Interview</span>
+                <span class="decision-date">on {{ candidate.interview_decision_date|date:"F j, Y" }}</span>
+            </div>
+
+            {% if candidate.interview_date %}
+                <div class="interview-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Interview Date:</span>
+                        <span class="detail-value">{{ candidate.interview_date|date:"F j, Y" }}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Interview Time:</span>
+                        <span class="detail-value">{{ candidate.interview_date|date:"g:i A" }}</span>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if candidate.interview_notes %}
+                <div class="interview-notes">
+                    <h4>Interview Notes:</h4>
+                    <div class="notes-content">{{ candidate.interview_notes }}</div>
+                </div>
+            {% endif %}
+
+            <div class="decision-actions">
+                <a href="{% url 'core:finalize_interview_decision' candidate.id 'reject' %}" class="btn-reject">Reject Candidate</a>
+            </div>
+        </div>
+    {% elif candidate.interview_status == 'REJECTED' %}
+        <div class="decision-rejected">
+            <div class="decision-status">
+                <span class="status-icon">✗</span>
+                <span class="status-text">Rejected</span>
+                <span class="decision-date">on {{ candidate.interview_decision_date|date:"F j, Y" }}</span>
+            </div>
+            <p>This candidate's data has been anonymized per GDPR requirements.</p>
+        </div>
+    {% endif %}
+</div>
+
+        <div class="assessments-section">
+            <h3>Assessment History</h3>
+
+            {% if assessments %}
+                <div class="assessment-list">
+                    <div class="assessment-header">
+                        <div class="assessment-col">Date</div>
+                        <div class="assessment-col">Status</div>
+                        <div class="assessment-col">Question Type</div>
+                        <div class="assessment-col">Score</div>
+                        <div class="assessment-col">Actions</div>
+                    </div>
+
+                    {% for assessment in assessments %}
+                        <div class="assessment-row">
+                            <div class="assessment-col">{{ assessment.created_at|date:"Y-m-d" }}</div>
+                            <div class="assessment-col">
+                                <span class="status-badge
+                                    {% if assessment.status == 'SENT' %}status-blue
+                                    {% elif assessment.status == 'ACCEPTED' %}status-green
+                                    {% elif assessment.status == 'STARTED' %}status-orange
+                                    {% elif assessment.status == 'FINISHED' %}status-purple
+                                    {% elif assessment.status == 'SCORED' %}status-green
+                                    {% else %}status-gray{% endif %}">
+                                    {{ assessment.get_status_display }}
+                                </span>
+                            </div>
+                            <div class="assessment-col">{{ assessment.get_chosen_question_type_display|default:"Not Started" }}</div>
+                            <div class="assessment-col">
+                                {% if assessment.score %}
+                                    <span class="score-value {% if assessment.score >= 80 %}score-high{% elif assessment.score >= 50 %}score-medium{% else %}score-low{% endif %}">
+                                        {{ assessment.score|floatformat:0 }}%
+                                    </span>
+                                {% elif assessment.status == 'SCORING' %}
+                                    <span>Evaluating...</span>
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </div>
+                            <div class="assessment-col">
+                                <a href="{% url 'core:manager_assessment_detail' assessment.id %}" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="no-assessments">
+                    <p>No assessments found for this candidate.</p>
+                    <a href="{% url 'core:invite_assessment' candidate.id %}" class="btn-primary">Send Assessment</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <style>
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-secondary, .btn-primary, .btn-view {
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .btn-primary {
+            background: #2196f3;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #9e9e9e;
+            color: white;
+        }
+
+        .btn-view {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            font-size: 0.8em;
+        }
+
+        .profile-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f5f5f5;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-avatar {
+            width: 60px;
+            height: 60px;
+            background: #2196f3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .profile-title h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .profile-email {
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+        .profile-details {
+            padding: 20px;
+        }
+
+        .detail-section {
+            margin-bottom: 25px;
+        }
+
+        .detail-section h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .detail-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            font-weight: 500;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 5px 12px;
+            border-radius: 16px;
+            font-size: 0.9em;
+        }
+
+        .notes-container {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 3px solid #2196f3;
+        }
+
+        .assessments-section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .assessment-list {
+            margin-top: 15px;
+        }
+
+        .assessment-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 15px;
+            background: #f5f5f5;
+            font-weight: 500;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .assessment-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+
+        .assessment-row:hover {
+            background: #f5f5f5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .status-blue {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .status-green {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-orange {
+            background: #fff8e1;
+            color: #f57f17;
+        }
+
+        .status-purple {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .status-gray {
+            background: #f5f5f5;
+            color: #616161;
+        }
+
+        .score-value {
+            font-weight: bold;
+        }
+
+        .score-high {
+            color: #2e7d32;
+        }
+
+        .score-medium {
+            color: #f57f17;
+        }
+
+        .score-low {
+            color: #c62828;
+        }
+
+        .no-assessments {
+            text-align: center;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .no-assessments p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* Custom template filter for splitting strings */
+
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .assessment-header, .assessment-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .assessment-header {
+                display: none;
+            }
+
+            .assessment-col:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 100px;
+            }
+
+            .assessment-col {
+                padding: 5px 0;
+            }
+        }
+    .interview-decision-section {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .decision-pending {
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 4px;
+    }
+
+    .decision-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .btn-accept {
+        padding: 8px 16px;
+        background: #4caf50;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .btn-reject {
+        padding: 8px 16px;
+        background: #f44336;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .decision-accepted {
+        padding: 15px;
+        background: #e8f5e9;
+        border-radius: 4px;
+        border-left: 4px solid #4caf50;
+    }
+
+    .decision-rejected {
+        padding: 15px;
+        background: #ffebee;
+        border-radius: 4px;
+        border-left: 4px solid #f44336;
+    }
+
+    .decision-status {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .status-icon {
+        font-size: 1.2em;
+        margin-right: 8px;
+    }
+
+    .status-text {
+        font-weight: bold;
+        margin-right: 8px;
+    }
+
+    .decision-date {
+        color: #666;
+        font-style: italic;
+    }
+
+    .interview-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 15px 0;
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+    }
+
+    .interview-notes {
+        margin-top: 15px;
+    }
+
+    .interview-notes h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .notes-content {
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #e0e0e0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .interview-details {
+            grid-template-columns: 1fr;
+        }
+
+        .decision-actions {
+            flex-direction: column;
+        }
+
+        .btn-accept, .btn-reject {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    </style>
+{% endblock %}
