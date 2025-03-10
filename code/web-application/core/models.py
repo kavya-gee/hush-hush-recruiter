@@ -55,7 +55,7 @@ class Candidate(models.Model):
     ]
 
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='candidate_profile')
-    source = models.CharField(max_length=50, choices=SOURCE_CHOICES, default='DIRECT')
+    source = models.CharField(max_length=50, choices=SOURCE_CHOICES, default='OTHER')
     source_score = models.IntegerField(default=0)
     resume_url = models.URLField(blank=True, null=True)
     profile_completed = models.BooleanField(default=False)
