@@ -1,0 +1,217 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    {% if decision == 'accept' %}Accept Candidate{% else %}Reject Candidate{% endif %} - Recruiter Platform
+{% endblock %}
+
+{% block content %}
+    <div class="decision-container">
+        <div class="decision-header">
+            <h2>
+                {% if decision == 'accept' %}
+                    Accept Candidate for Interview
+                {% else %}
+                    Reject Candidate
+                {% endif %}
+            </h2>
+            <div class="candidate-info">
+                <div class="candidate-name">{{ candidate.user.full_name|default:candidate.user.email }}</div>
+                <div class="candidate-email">{{ candidate.user.email }}</div>
+            </div>
+        </div>
+
+        <div class="decision-content">
+            <div class="decision-warning
+                {% if decision == 'accept' %}warning-accept{% else %}warning-reject{% endif %}">
+                {% if decision == 'accept' %}
+                    <p><strong>You are about to accept this candidate for an interview.</strong></p>
+                    <p>An email notification will be sent to the candidate with interview details.</p>
+                {% else %}
+                    <p><strong>IMPORTANT: You are about to reject this candidate.</strong></p>
+                    <p>This action will:</p>
+                    <ul>
+                        <li>Mark the candidate as rejected</li>
+                        <li>Send a rejection email notification</li>
+                        <li>Anonymize personal data and remove code submissions (GDPR compliance)</li>
+                    </ul>
+                    <p class="warning-text">This action cannot be undone.</p>
+                {% endif %}
+            </div>
+
+            <form method="post" class="decision-form">
+                {% csrf_token %}
+
+                {% if decision == 'accept' %}
+                    <div class="form-section">
+                        <h3>Interview Details</h3>
+                        <div class="form-group">
+                            <label for="interview_date">Interview Date:</label>
+                            <input type="date" id="interview_date" name="interview_date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interview_time">Interview Time:</label>
+                            <input type="time" id="interview_time" name="interview_time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Interview Notes (internal only):</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Enter any notes for the interview"></textarea>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="confirm_deletion" required>
+                                I confirm that I want to reject this candidate and remove their personal data
+                            </label>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <div class="decision-actions">
+                    <a href="{% url 'core:view_candidate' candidate.id %}" class="btn-secondary">Cancel</a>
+                    <button type="submit" class="btn-{% if decision == 'accept' %}primary{% else %}danger{% endif %}">
+                        {% if decision == 'accept' %}
+                            Accept for Interview
+                        {% else %}
+                            Reject Candidate
+                        {% endif %}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .decision-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .decision-header {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .candidate-info {
+            margin-top: 10px;
+        }
+
+        .candidate-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .candidate-email {
+            color: #666;
+        }
+
+        .decision-warning {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .warning-accept {
+            background: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .warning-reject {
+            background: #ffebee;
+            border-left: 4px solid #c62828;
+        }
+
+        .warning-text {
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        .decision-form {
+            margin-top: 25px;
+        }
+
+        .form-section {
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input[type="date"],
+        .form-group input[type="time"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .decision-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .btn-primary, .btn-danger, .btn-secondary {
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2196f3;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #9e9e9e;
+            color: white;
+        }
+    </style>
+
+    <script>
+        // Set default date to tomorrow
+        document.addEventListener('DOMContentLoaded', function() {
+            const interviewDateInput = document.getElementById('interview_date');
+            if (interviewDateInput) {
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+
+                const year = tomorrow.getFullYear();
+                const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+                const day = String(tomorrow.getDate()).padStart(2, '0');
+
+                interviewDateInput.value = `${year}-${month}-${day}`;
+            }
+        });
+    </script>
+{% endblock %}

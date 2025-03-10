@@ -1,0 +1,194 @@
+Repo_Name,Repo_Owner,Repo_URL,Stars,Forks,Number_of_Contributors,Language,Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Git_Score,Hireable,Followers,Type_of_User,number_of_additions,number_of_deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjEzNTA1Mw==,d2s,Daniel Schildt,0,daniel@autiomaa.org,592.0,True,191,User,149,32,2.0,1.0,1.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjE5OTc3,thorrsson,Phil Haack,61,,62483.0,False,16,User,120,457,7.0,5.0,2.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjExOTI3ODA=,haacked,Ben Bodenmiller,615,,620336.0,True,3529,User,76,21,13.0,10.0,3.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjU3MjE5Ng==,bbodenmiller,Stuart P. Bentley,14,s@stuartpb.com,15236.0,True,40,User,48,28,8.0,7.0,1.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjYzNDA2Mw==,stuartpb,Markus Olsson,45,,45186.0,False,149,User,30,7,0.0,0.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjU3MzUyOQ==,niik,Michael Bemmerl,793,,794963.0,False,1124,User,142,27,5.0,4.0,1.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjIwNjA1NDE=,mibe,Tim Hunter,5,thorrsson@github.com,7503.0,False,21,User,330,2,1.0,0.0,0.0,14,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjU2OTI5MA==,Arvur,Denis Grinyuk,0,denis.grinyuk@gmail.com,995.0,False,31,User,103,41,6.0,5.0,1.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjEyNzMyNTA=,ArgentiApparatus,Gary Smith,0,,817.0,False,6,User,41,20,5.0,5.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjE1MDky,jayvdb,John Vandenberg,370,jayvdb@gmail.com,372394.0,True,530,User,29,35,6.0,6.0,0.0,6,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjEzNjY2NTQ=,koppor,Oliver Kopp,1562,kopp.dev@gmail.com,1563961.0,True,381,User,28,2,11.0,10.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjYzNjY0MA==,maieul,Maïeul Rouquette,66,,67190.0,False,71,User,428,91,4.0,4.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjM5NjA3Ng==,JasonGross,Jason Gross,3727,jgross@mit.edu,3728173.0,False,225,User,46,2,6.0,6.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,U_kgDOBgbOcQ,SunnyCloudYang,GoodNullName,392,sunnycloudyang@outlook.com,,False,6,User,47,21,,,,1,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjE2MDkxODI=,martonmiklos,Miklós Márton,118,,120196.0,True,58,User,1118,70,7.0,6.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjExNTA3MDQ=,draco892,draco892,25,andrea.domenico.giuliano@gmail.com,25706.0,False,13,User,463,80,1.0,1.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjE1NjY2ODk=,rye,Kris Rye,65,kristofer.rye@gmail.com,66294.0,False,67,User,775,232,2.0,1.0,1.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjY4MDU5ODQ=,HassanHashemi,Hassan Hashemi,30,,30179.0,False,14,User,9,6,1.0,1.0,0.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjE2OTUxMDU1,dooleydevin,Devin Dooley,16,dooleydevin@github.com,17777.0,False,20,User,489,68,0.0,0.0,0.0,8,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjM1NDg=,AArnott,Andrew Arnott,6481,andrewarnott@live.com,6483165.0,False,1262,User,11,2,7.0,5.0,2.0,0,0,0
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,Unknown,MDQ6VXNlcjgzOTk5Mg==,Coeur,Cœur,140,,141633.0,False,196,User,106,131,5.0,5.0,0.0,3,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjQ1NDY5,ljharb,Jordan Harband,3746,,3860402.0,False,7347,User,8488,5497,17.0,17.0,0.0,602,10,8
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjMzOTIwOA==,hshoff,Harrison Shoff,0,,10315.0,False,1046,User,3871,1743,25.0,21.0,4.0,1,3,3
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE5NTUzNA==,lencioni,Joe Lencioni,383,joe.lencioni@gmail.com,392699.0,False,586,User,1528,415,37.0,35.0,2.0,11,7,4
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjEwNjMy,goatslacker,Josh Perez,8,josh@goatslacker.com,16287.0,False,882,User,5475,895,5.0,5.0,0.0,1,6,5
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjI5NjI3OQ==,justjake,Jake Teton-Landis,103,just.1.jake@gmail.com,108061.0,True,385,User,1643,1013,14.0,13.0,1.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjc4NzY5OTc=,sharmilajesupaul,Sharmila Jesupaul,34,,37437.0,False,92,User,410,85,11.0,11.0,0.0,8,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE3NjAzNw==,1pete,1Pete,0,,2795.0,False,0,User,59,46,18.0,16.0,2.0,1,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjEwMzkzMTk4,vsemozhetbyt,Vse Mozhe Buty,42,vsemozhetbyt@gmail.com,44094.0,False,155,User,122,112,8.0,7.0,1.0,3,6,5
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjI5NjEy,ssorallen,Ross Allen,86,,86900.0,True,240,User,102,38,4.0,3.0,1.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjg0MTA3OTM=,chrisngobanh,Christopher Banh,0,,1004.0,False,39,User,89,11,6.0,4.0,2.0,0,5,5
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE0MDQ4MTA=,SimenB,Simen Bekkhus,200,sbekkhus91@gmail.com,203070.0,False,1235,User,76,14,9.0,8.0,1.0,3,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjMxMTIxNTk=,taion,Jimmy Jia,0,,2640.0,False,759,User,602,294,5.0,5.0,0.0,1,4,3
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjM1MDcyODc=,Ryan-McBride,Ryan McBride,5,,5858.0,True,16,User,17,5,6.0,5.0,1.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE2OTg3MzIy,bl00mber,,0,,830.0,False,40,User,30,10,4.0,4.0,0.0,1,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE3MDMyMTk=,mitsuruog,Mitsuru Ogawa,114,mitsuru.ogawa.jp+github@gmail.com,114851.0,False,237,User,11,3,4.0,4.0,0.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjQzMTY1MDE=,felipethome,Felipe Thome,0,,785.0,False,36,User,30,9,5.0,4.0,0.0,0,3,2
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjI3ODU3OTE=,kevinweber,Kevin Weber,3,,4067.0,False,121,User,25,21,5.0,5.0,0.0,1,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjUwMTcwMg==,edmorley,Ed Morley,532,,533543.0,False,321,User,223,224,3.0,3.0,0.0,2,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjE3NTUxNQ==,ajacksified,Jack Lawson,3,,3408.0,False,226,User,4,3,1.0,1.0,0.0,0,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjg3NDE0OA==,simono,Simon Olofsson,69,,69664.0,False,52,User,12,0,4.0,4.0,0.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjEzMzkzNw==,spikebrehm,Spike Brehm,1,spike@watershedclimate.com,2170.0,False,739,User,75,6,2.0,2.0,0.0,0,2,2
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjY3MTE4NDU=,vladshcherbin,Vlad Shcherbin,322,vlad.shcherbin@gmail.com,322666.0,True,59,User,4,3,4.0,4.0,0.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjIzNjYyMzI5,raunofreiberg,rauno,9,,14301.0,True,4555,User,4,2,5.0,3.0,2.0,1,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjcyOTIy,wyattdanger,Stephen Bush,7,,7672.0,False,117,User,6,29,3.0,2.0,1.0,1,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjEyNTkxODkw,jabacchetta,Jason Bacchetta,0,,488.0,True,17,User,6,5,3.0,3.0,0.0,0,1,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjQyODE4ODc=,lvarayut,Alex Lerdkanlayanawat ,3,,3720.0,True,391,User,3,1,2.0,2.0,0.0,0,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjEzNTQ2MQ==,trshafer,Thomas Shafer,1,,1302.0,False,74,User,44,9,1.0,1.0,0.0,0,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjI0Njgx,pigoz,Stefano Pigozzi,37,stefano.pigozzi@gmail.com,37390.0,True,156,User,52,7,1.0,1.0,0.0,0,1,1
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjI1MDg2,RobLoach,Rob Loach,1797,,1797697.0,False,500,User,45,2,1.0,1.0,0.0,0,0,0
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,JavaScript,MDQ6VXNlcjc3OTA0Nw==,remcohaszing,Remco Haszing,714,remcohaszing@gmail.com,714796.0,False,313,User,5,3,3.0,3.0,0.0,0,1,1
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjczNTMzNzM=,thomwolf,Thomas Wolf,24,,649265.0,True,3003,User,403165,167007,99.0,77.0,22.0,259,6,6
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjM1OTAxMDgy,sgugger,Sylvain Gugger,0,,1532914.0,False,3436,User,334254,272864,1043.0,1015.0,28.0,5119,12,12
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjMwNzU1Nzc4,LysandreJik,Lysandre Debut,86,hi@lysand.re,932205.0,False,1598,User,123847,112590,528.0,466.0,57.0,3554,39,36
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjI1MjE2Mjg=,ydshieh,Yih-Dar,361,,825898.0,False,224,User,73224,29595,1144.0,1032.0,107.0,1322,46,37
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjIzNDIzNjE5,patrickvonplaten,Patrick von Platen,186,,702989.0,False,1910,User,156107,33257,713.0,627.0,86.0,1490,93,81
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjEwNjc2MTAz,stas00,Stas Bekman,381,,584057.0,False,1831,User,40625,16016,560.0,509.0,47.0,401,197,175
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjEyMjQwODQ0,gante,Joao Gante,333,joaofranciscocardosogante@gmail.com,652705.0,False,372,User,52106,65102,518.0,451.0,53.0,864,21,17
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjMyNjU3Nw==,julien-c,Julien Chaumond,196,julien@huggingface.co,380380.0,False,1735,User,43729,59516,105.0,100.0,5.0,426,6,6
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjQ4NTk1OTI3,ArthurZucker,Arthur,324,,882117.0,False,527,User,98329,37016,414.0,345.0,56.0,2436,27,17
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjEyODY2NTU0,Rocketknight1,Matt,112,,341766.0,False,388,User,69601,24657,339.0,299.0,28.0,583,11,10
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjQ5MjQwNTk5,younesbelkada,Younes Belkada,200,,390540.0,True,780,User,43551,8469,375.0,318.0,56.0,572,12,10
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjYwNDUwMjU=,sshleifer,Sam Shleifer,1,,136714.0,False,432,User,23060,9472,337.0,273.0,64.0,351,188,186
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjQ4MzI3MDAx,NielsRogge,,289,,646981.0,False,3236,User,212042,13288,331.0,272.0,52.0,557,49,39
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjIyNjE0OTI1,amyeroberts,,244,,733833.0,False,321,User,59538,45974,275.0,238.0,29.0,2303,21,14
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjIwNDMyMQ==,Narsil,Nicolas Patry,528,,645385.0,False,724,User,21678,10373,291.0,235.0,53.0,302,8,8
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjI3MTM3NTY2,patil-suraj,Suraj Patil,22,surajp815@gmail.com,162362.0,False,993,User,44297,4547,234.0,200.0,32.0,386,12,11
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjE2MTA3NjE5,VictorSanh,Victor SANH,6,,29961.0,False,420,User,13116,4630,18.0,17.0,1.0,20,7,7
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,U_kgDOBgDLhQ,zucchini-nlp,Raushan Turganbay,226,raushan@huggingface.co,,False,95,User,57287,18820,,,,310,11,6
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjM2NTM3ODk=,mrm8488,Manuel Romero,19,mrm8488@gmail.com,50427.0,True,307,User,6954,166,154.0,149.0,5.0,7,10,10
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,U_kgDOBZhWpw,sanchit-gandhi,Sanchit Gandhi,127,,,False,798,User,17507,2586,,,,312,26,22
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,Bot Account,dependabot[bot],dependabot[bot],0,Not Public,,False,0,Bot,0,0,,,,0,0,0
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjc4MzE4OTU=,muellerzr,Zach Mueller,265,,353864.0,False,1261,User,7020,3753,168.0,143.0,18.0,358,4,2
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjIyNDE1MjA=,mfuntowicz,Funtowicz Morgan,99,,154117.0,True,289,User,14182,12816,90.0,66.0,24.0,108,2,2
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjU5NDYyMzU3,stevhliu,Steven Liu,325,,456735.0,False,185,User,15710,11450,128.0,116.0,9.0,574,5,4
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjk1OTU5MA==,jplu,Julien Plu,4,,87052.0,False,54,User,27342,15386,140.0,119.0,21.0,139,4,4
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjc4ODkxMA==,aaugustin,Aymeric Augustin,305,,351202.0,False,1291,User,22312,18749,12.0,12.0,0.0,13,4,4
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjU3MTk2NTEw,SunMarc,Marc Sun,214,,287757.0,False,162,User,4594,696,99.0,89.0,6.0,362,2,1
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjIwNjUxMzg3,stefan-it,Stefan Schweter,304,,325991.0,False,537,User,7179,585,47.0,42.0,5.0,43,26,22
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjM4ODUwNDQ=,rlouf,Rémi Louf,611,,625821.0,False,493,User,7353,4055,14.0,13.0,1.0,6,0,0
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,Python,MDQ6VXNlcjI0NDc3ODQx,faaany,Fanli Lin,143,fanli.lin@intel.com,157813.0,False,14,User,686,548,84.0,75.0,9.0,11,2,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjExMjg4NDk=,mholt,Matt Holt,361,,368866.0,False,5778,User,820,443,5.0,5.0,0.0,0,3,3
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjMxOTk2,avelino,Avelino,653,,783542.0,True,5671,User,5207,5119,37.0,36.0,1.0,703,145,145
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjkwMjY1ODE=,kirillDanshin,Kirill Danshin,1,kirill@danshin.pro,10864.0,False,385,User,217,102,17.0,14.0,3.0,45,4,4
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjE5MjQxMzQ=,dmitshur,Dmitri Shuralyov,241,dmitri@shuralyov.com,250767.0,False,2295,User,161,86,22.0,22.0,0.0,25,7,7
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjIwMTkzMA==,matrixik,Dobrosław Żybort,9,matrixik@gmail.com,11560.0,False,148,User,237,160,13.0,11.0,2.0,1,3,3
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjc2NjY5NTU=,kazhuravlev,Kirill Zhuravlev,760,,763830.0,True,962,User,1030,743,11.0,5.0,1.0,0,1,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjMxMjc4NDc=,cassiobotaro,Cássio Botaro,412,cassiobotaro@gmail.com,502132.0,True,1088,User,523,376,11.0,10.0,1.0,577,1,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjE4OTYxNzU=,hoffoo,Marin,7,,9444.0,False,47,User,403,169,12.0,12.0,0.0,0,1,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjI5NjI3ODk4,phanirithvij,Phani Rithvij,1690,madlad@duck.com,1706413.0,True,104,User,643,401,38.0,30.0,8.0,67,8,5
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjc1NTc1Nw==,spekary,Shannon,134,spekary@gmail.com,140440.0,False,43,User,180,202,39.0,37.0,2.0,2,1,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,U_kgDOBgl-gw,yassinebenaid,Yassine Benaid,2255,yassinebenaide3@gmail.com,,False,59,User,11,30,,,,89,3,3
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjU1MjgzMDQ=,ceriath,Ceriath,34,gh@ceriath.net,82947.0,False,39,User,106,92,24.0,21.0,3.0,302,2,2
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjk0NzY0NjY=,patdhlk,Patrick Dahlke,9,,10548.0,True,84,User,34,10,10.0,9.0,1.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjI5MzMwNjE=,nikolaydubina,Nikolay Dubina,1022,nikolay@ndx.one,1024244.0,True,289,User,13,2,13.0,11.0,2.0,1,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjMzMTA2MQ==,bobg,Bob Glickstein,193,,195072.0,False,55,User,14,3,16.0,11.0,5.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjIxOTc5,appleboy,Bo-Yi Wu,2130,appleboy.tw@gmail.com,2209398.0,True,7000,User,17,11,11.0,10.0,1.0,472,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjE2ODkyNDQ0,twharmon,Travis Harmon,0,harmtrav@gmail.com,1431.0,False,0,User,10,1,10.0,9.0,1.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjc0OTYyNzg=,panjf2000,Andy Pan,280,i@andypan.me,319272.0,True,3350,User,12,10,5.0,5.0,0.0,234,2,2
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjE0MjI2Mg==,bitfield,John Arundel,387,john@bitfieldconsulting.com,389979.0,False,1308,User,22,9,12.0,10.0,2.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjg0NzA3NjM=,codingsince1985,Jerry Zhao,1,,2441.0,False,73,User,11,7,9.0,9.0,0.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjQ4NzQwMDk=,felipeweb,Felipe Oliveira,35,fpo@felipeweb.dev,42070.0,False,303,User,13,4,0.0,0.0,0.0,45,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjY4MTE4MzA=,pbnj,Peter Benjamin,250,,251816.0,False,317,User,9,0,11.0,9.0,2.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjgxMzg0MjM1,switchupcb,SwitchUpCB,27,,28403.0,False,27,User,5,6,10.0,8.0,2.0,0,1,1
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjUzNzc5NzA=,pjebs,pj,2,,4010.0,False,88,User,10,2,17.0,9.0,8.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjIwOTYxOTM2,linxGnu,Linh Tran Tuan,21,,21869.0,True,254,User,10,5,4.0,4.0,0.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjEwOTI4ODI=,bnkamalesh,Kamaleshwar,115,,116381.0,False,97,User,9,5,9.0,8.0,1.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjEwMTEx,mattn,mattn,1181,mattn.jp@gmail.com,1195032.0,False,12734,User,24,4,9.0,8.0,1.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,U_kgDOB7-4vQ,bschoch-schwarz,,0,,,False,1,User,226,53,,,,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,MDQ6VXNlcjc5MzUwMw==,carlescere,Carles Cerezo Guzmán,0,,1106.0,False,28,User,21,7,7.0,7.0,0.0,0,0,0
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,Go,U_kgDOBejWwA,lincolnjpg,Lincoln Junior,316,,,False,4,User,8,1,,,,0,0,0
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE5MDg4OTg=,dstftw,Sergey M.,0,dstftw@gmail.com,301461.0,True,479,User,132198,57499,60.0,52.0,8.0,684,16,11
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjc3OTU2OA==,phihag,Philipp Hagemeister,131,phihag@phihag.de,281899.0,False,467,User,95392,51330,15.0,13.0,2.0,0,69,62
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEwODc5Njk0,remitamine,,11,remitamine@gmail.com,147649.0,True,157,User,65394,44738,145.0,86.0,59.0,59,21,18
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEyMzk3Mjc=,jaimeMF,Jaime Marquínez Ferrándiz,12,jaime.marquinez.ferrandiz@fastmail.net,64364.0,True,142,User,26316,14001,85.0,61.0,24.0,1,40,35
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE5Mzc2ODk=,yan12125,Chih-Hsuan Yen,52,,111852.0,False,301,User,32619,13742,39.0,20.0,19.0,57,16,10
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEyMjI4ODA=,dirkf,,148,,216869.0,False,81,User,18497,6446,129.0,60.0,11.0,206,14,9
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjUzNDg3,rg3,Ricardo Garcia,1,,8964.0,False,1536,User,4072,1821,0.0,0.0,0.0,0,22,21
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEyMjUyOTQ=,FiloSottile,Filippo Valsorda,566,github@filippo.io,603391.0,False,8101,User,15708,9152,28.0,24.0,3.0,0,24,22
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjQ1MjU0MzY0,pulpe,,1,,3139.0,False,13,User,1583,543,0.0,0.0,0.0,0,0,0
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEwMDA0MTM1,Tithen-Firion,,12,,22649.0,False,47,User,2976,1151,45.0,30.0,15.0,6,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE4NDk4Mw==,gcmalloc,Malik Bougacha,0,gcmalloc@gmail.com,2136.0,False,101,User,649,946,4.0,2.0,2.0,0,0,0
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjM2OTYzOTM=,yasoob,M.Yasoob Ullah Khalid ☺,12,hi@yasoob.me,17474.0,True,1218,User,828,68,22.0,17.0,5.0,0,19,18
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjc5NDc2,iemejia,Ismaël Mejía,29,iemejia@gmail.com,35934.0,True,174,User,4692,1323,5.0,4.0,1.0,0,3,3
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjM1ODI5Mw==,atomicdryad,,0,,4462.0,False,6,User,1541,640,23.0,8.0,15.0,0,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjg0MDEyNQ==,Rudloff,Pierre Rudloff,13,contact@rudloff.pro,19277.0,True,200,User,2483,459,12.0,5.0,7.0,0,83,71
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEwMjUzOTQz,TRox1972,Déstin Reed,0,,8413.0,False,3,User,841,179,61.0,9.0,52.0,10,42,32
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE4NTY0MjU=,goggle,Alexander Seiler,174,seileralex@gmail.com,181310.0,True,50,User,1003,637,42.0,15.0,27.0,8,13,10
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjQ4MDAyMDE=,rrooij,Robin de Rooij,12,,14007.0,True,49,User,223,55,12.0,8.0,4.0,1,2,2
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjQ0MzMyNzk=,rzhxeo,,0,,10375.0,False,0,User,2410,600,58.0,41.0,17.0,0,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjEyNzA3MTg=,johnhawkinson,John Hawkinson,1,jhawk@alum.mit.edu,6841.0,False,12,User,490,119,29.0,11.0,18.0,13,21,10
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjQwMDY5OQ==,xanadu,Allan,12,,15434.0,False,3,User,2536,510,4.0,1.0,3.0,0,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE1Mzg0,jeffcrouse,Jeff Crouse,15,jeff@seethroughlab.com,29510.0,False,202,User,8145,5893,2.0,1.0,1.0,0,2,2
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjY2MjMzODg=,pukkandan,,35,pukkandan.ytdlp@gmail.com,53761.0,True,232,User,9106,5738,7.0,1.0,3.0,21,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjIyNjIzODg2,parmjitv,Parmjit Virk,0,,3738.0,False,5,User,297,36,20.0,13.0,7.0,5,9,8
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjIyMDgzOQ==,lalinsky,Lukáš Lalinský,454,lukas@oxygene.sk,456055.0,False,204,User,210,61,12.0,8.0,4.0,0,4,4
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjIzMzQ0MDc=,gebn,George Brighton,48,,48598.0,False,32,User,241,105,2.0,1.0,1.0,0,0,0
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjE0MTU0Ng==,jwilk,Jakub Wilk,0,jwilk@jwilk.net,3310.0,False,0,User,127,203,21.0,12.0,9.0,3,4,4
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjY1MDEyNzE=,MikeCol,,0,,1899.0,False,0,User,255,14,13.0,9.0,4.0,0,0,0
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjI2NjM1MDU=,Dineshs91,DINESH S,12,dineshpy07@gmail.com,13536.0,False,52,User,200,59,8.0,8.0,0.0,0,1,1
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,Makefile,MDQ6VXNlcjY5Mjg4MzI=,rupertbaxter2,,0,,1237.0,False,0,User,801,166,2.0,1.0,1.0,0,2,2
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjIzNzI2NDA=,mxyng,Michael Yang,553,,1370404.0,False,280,User,630045,57449,502.0,454.0,39.0,389,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjI1MTI5Mg==,jmorganca,Jeffrey Morgan,302,jmorganca@gmail.com,993480.0,False,2280,User,327612,116563,268.0,235.0,28.0,1362,148,119
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjQwMzMwMTY=,dhiltgen,Daniel Hiltgen,467,,760157.0,False,208,User,149110,46549,420.0,341.0,72.0,270,13,8
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjU4NTM0Mjg=,BruceMacD,Bruce MacDonald,90,,247457.0,False,474,User,14163,49460,194.0,145.0,38.0,450,39,34
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjc1MjM5,pdevine,Patrick Devine,81,pdevine@sonic.net,165383.0,False,133,User,24269,5926,129.0,119.0,6.0,237,2,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjYzMzY4MQ==,technovangelist,Matt Williams,439,m@technovangelist.com,466707.0,False,680,User,10015,6597,41.0,30.0,11.0,29,33,31
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjQ2,bmizerany,Blake Mizerany,734,blake.mizerany@gmail.com,768302.0,False,1482,User,10267,3053,73.0,64.0,9.0,61,6,4
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjY0Njg0OTk=,jessegross,Jesse Gross,65,,89189.0,False,15,User,5121,1468,51.0,46.0,3.0,69,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjMzMjU0NDc=,mchiang0610,Michael,14,,25790.0,False,237,User,574,379,18.0,18.0,0.0,51,10,10
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjc2MTI1MTY4,joshyan1,Josh,83,,90069.0,False,19,User,1430,285,33.0,19.0,13.0,10,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjY1MDk3MDcw,royjhan,,47,,60008.0,False,16,User,3034,883,56.0,38.0,17.0,13,8,7
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,U_kgDOBkqSIg,remy415,Jeremy,42,remy415@gmail.com,,False,22,User,755,451,,,,2,2,2
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjE0OTQ2ODU0,rick-github,frob,46,,50295.0,False,24,User,99,37,30.0,16.0,5.0,5,11,5
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjI5MzYwODY0,ParthSareen,Parth Sareen,260,,277267.0,True,131,User,1552,9124,22.0,13.0,5.0,26,6,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjExNTM3Njk5,danemadsen,Dane Madsen,2022,dane_madsen@hotmail.com,2026078.0,False,55,User,1501,1822,3.0,3.0,0.0,1,4,4
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjYzMDMzNTA1,hoyyeva,Eva H,0,,4736.0,False,24,User,2998,499,7.0,5.0,2.0,2,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjkwMzM1MjYz,MarkWard0110,Mark Ward,92,,92575.0,False,1,User,22,12,1.0,1.0,0.0,0,18,14
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjg5OTA3Nzc=,jamesbraza,James Braza,623,jamesbraza@gmail.com,625078.0,False,69,User,70,24,9.0,5.0,4.0,3,18,17
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjU0ODM4MzI5,deichbewohner,Arne Müller,0,,729.0,False,5,User,13,16,3.0,2.0,1.0,2,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjExMDA0NDA=,hmartinez82,Hernan Martinez,172,,172665.0,False,16,User,28,21,3.0,1.0,2.0,2,1,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjIyNjMzMzg1,eltociear,Ikko Eltociear Ashimine,0,,904.0,False,0,User,7,7,7.0,5.0,2.0,0,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,U_kgDOB4Xxqw,rapidarchitect,RAPID ARCHITECT,16,,,False,4,User,6,1,,,,0,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjg2Mjk1MQ==,sammcj,Sam,948,,951181.0,False,227,User,182,27,14.0,5.0,9.0,8,9,5
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjI1NDczMzE4,tjbck,Timothy Jaeryang Baek,6277,tim@openwebui.com,6281058.0,True,844,User,606,2308,2.0,2.0,0.0,0,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjgxMjk=,slouffka,slouffka,42,,42248.0,False,18,User,27,28,1.0,1.0,0.0,0,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjUyODEz,xyproto,Alexander F. Rødseth,2724,,2726358.0,False,573,User,184,401,9.0,4.0,5.0,1,4,4
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjU0MDEyMDIx,tusharhero,,562,,562650.0,False,41,User,11,8,5.0,3.0,2.0,0,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjExMzA5MDY=,eliben,Eli Bendersky,744,eliben@gmail.com,750999.0,False,5671,User,380,23,5.0,5.0,0.0,1,1,1
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjgyMzIzNjA=,coolljt0725,Lei Jitang,14,leijitang@outlook.com,15270.0,True,139,User,12,9,11.0,5.0,3.0,0,0,0
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,TypeScript,MDQ6VXNlcjEyNjgwMjc=,mraiser,,16,,17293.0,False,6,User,769,218,1.0,1.0,0.0,1,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjM3MjIwOTIw,labuladong,DonglaiFu,62,,263505.0,True,6581,User,140147,41402,2.0,2.0,0.0,37,301,301
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjQxNzQ3MDA1,brucecat,BruceCat,1,,54224.0,False,25,User,48900,3439,7.0,4.0,3.0,0,2,2
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjU2NDQzMTM1,JodyZ0203,Jody Zhou,4,,4615.0,True,27,User,119,19,3.0,3.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjUyNTY1Njkw,Jasper-Joe,,0,,940.0,False,2,User,261,7,5.0,4.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,U_kgDOBuvxZg,kkty39,Yingyi,20,,,False,1,User,19,20,,,,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjQzODY4NTU5,csguojin,Guo Jin,13,,13903.0,False,69,User,441,23,3.0,2.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjM0MTAxNjg=,eric496,eric496,0,,413.0,True,22,User,170,1,2.0,1.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjUyODk4OTQ1,tianzhongwei,,0,,2049.0,False,2,User,179,8,22.0,4.0,18.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjQ5MTUxNTA5,1097452462,dragon_li,0,,188.0,False,0,User,32,6,1.0,1.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjIxMDc2NzQ2,Miraclemin,Miraclewang,3,549788813@qq.com,3578.0,False,16,User,189,3,3.0,2.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjc3NzM3NzU5,mrwangone,,22,,22498.0,False,1,User,13,9,3.0,3.0,0.0,0,1,1
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjEyMDgxMTcz,jasonlu0117,,8,tdkrlu@sina.com,10395.0,False,1,User,2091,83,2.0,1.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjI0OTg3NTAx,happyvictorwu,Victor Wu,0,happyvictorwu@outlook.com,769.0,False,12,User,165,2,5.0,3.0,2.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjYzOTUzMjM=,mario-huang,Mario,332,,333180.0,False,14,User,73,48,14.0,3.0,1.0,0,1,1
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjI1OTc1NTc5,MarineJoker,,0,,446.0,False,10,User,123,13,2.0,2.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjMxOTM3Njcz,ChenjieXu,Chenjie Xu,0,cxuscience@gmail.com,1055.0,True,9,User,651,95,2.0,2.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjMzNjExNDA0,LEODPEN,LEO D PEN,1,leodpen@gmail.com,1297.0,False,67,User,78,2,1.0,1.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjI2NjY0MTE1,zhengpj95,zhengpj,215,598359997@qq.com,215307.0,True,0,User,61,1,2.0,1.0,1.0,0,1,1
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,U_kgDOBuyMiQ,TroyMai,麦超禹,37,2022302111425@whu.edu.cn,,False,0,User,43,30,,,,0,1,1
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjUwMTkyMTE1,L-WWEEII,Memeda_LWW,0,wyluo@stu.pku.edu.cn,491.0,False,10,User,109,2,3.0,2.0,1.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjYwMDk0ODM1,and-star,,5,,5311.0,False,0,User,7,4,2.0,2.0,0.0,0,0,0
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,Markdown,MDQ6VXNlcjEyMTMxMjYy,zhangxiann,zhangxian,0,zhangxian_tech@163.com,306.0,False,94,User,9,3,1.0,1.0,0.0,0,2,2

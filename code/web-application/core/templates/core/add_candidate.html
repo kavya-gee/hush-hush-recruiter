@@ -1,0 +1,73 @@
+{% extends "core/base.html" %}
+
+{% block title %}Add Candidate - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <h2>Add New Candidate</h2>
+    <p>Create a new candidate account. An email with login credentials will be sent automatically.</p>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {% if form.non_field_errors %}
+        <div class="alert">
+            {% for error in form.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="form-group">
+            <label for="{{ form.username.id_for_label }}">Username:</label>
+            {{ form.username }}
+            {% if form.username.errors %}
+            <div class="alert">{{ form.username.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.email.id_for_label }}">Email:</label>
+            {{ form.email }}
+            {% if form.email.errors %}
+            <div class="alert">{{ form.email.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.full_name.id_for_label }}">Full Name:</label>
+            {{ form.full_name }}
+            {% if form.full_name.errors %}
+            <div class="alert">{{ form.full_name.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.source.id_for_label }}">Source:</label>
+            {{ form.source }}
+            {% if form.source.errors %}
+            <div class="alert">{{ form.source.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.source_score.id_for_label }}">Source Score:</label>
+            {{ form.source_score }}
+            {% if form.source_score.errors %}
+            <div class="alert">{{ form.source_score.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.skills.id_for_label }}">Skills:</label>
+            {{ form.skills }}
+            {% if form.skills.errors %}
+            <div class="alert">{{ form.skills.errors }}</div>
+            {% endif %}
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Create Candidate</button>
+            <a href="{% url 'core:manager_dashboard' %}"><button type="button">Cancel</button></a>
+        </div>
+    </form>
+{% endblock %}

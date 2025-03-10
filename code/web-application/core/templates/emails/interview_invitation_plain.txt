@@ -1,0 +1,19 @@
+Congratulations!
+
+Hello {{ candidate_name }},
+
+We are pleased to inform you that after reviewing your assessment, we would like to invite you to the next stage of our interview process at {{ company_name }}.
+
+Interview Details:
+Date & Time: {{ interview_date }}
+
+We will be in touch shortly with more specific details about the interview format and what to expect.
+
+Your coding assessment demonstrated skills that align well with what we're looking for, and we're excited to learn more about you and your experiences.
+
+Please reply to this email to confirm your availability for the scheduled interview. If this time doesn't work for you, please let us know so we can make alternative arrangements.
+
+Best regards,
+The Hiring Team at {{ company_name }}
+
+If you have any questions, please contact us at {{ contact_email }}

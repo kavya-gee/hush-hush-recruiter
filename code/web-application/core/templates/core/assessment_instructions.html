@@ -1,0 +1,109 @@
+{% extends "core/base.html" %}
+
+{% block title %}Assessment Instructions - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <h2>Assessment Instructions</h2>
+
+    <div class="instructions-container">
+        <div class="instructions-header">
+            <h3>{{ assessment.title }}</h3>
+            <p>Welcome to your coding assessment. Please read these instructions carefully.</p>
+        </div>
+
+        <div class="instructions-content">
+            <h4>Important Information:</h4>
+            <ul>
+                <li><strong>Time limit:</strong> You have 24 hours to complete this assessment.</li>
+                <li><strong>Started at:</strong> {{ assessment.start_time|date:"Y-m-d H:i" }}</li>
+                <li><strong>Ends at:</strong> {{ assessment.end_time|date:"Y-m-d H:i" }}</li>
+                <li>Once you select a question type, you cannot change it.</li>
+                <li>You can take breaks, but the timer will continue running.</li>
+                <li>Your work is automatically saved as you type.</li>
+                <li>You must submit your final solution before the time limit.</li>
+            </ul>
+
+            <h4>Assessment Format:</h4>
+            <p>This assessment has three types of questions:</p>
+            <ol>
+                <li><strong>Frontend Development:</strong> Focuses on HTML, CSS, and JavaScript.</li>
+                <li><strong>Backend Development:</strong> Focuses on API design, server-side logic, and data processing.</li>
+                <li><strong>Database Design:</strong> Focuses on schema design, queries, and data modeling.</li>
+            </ol>
+
+            <p>You will need to choose <strong>ONE</strong> of these question types to answer.</p>
+
+            <h4>Evaluation Criteria:</h4>
+            <ul>
+                <li>Code quality and organization</li>
+                <li>Problem-solving approach</li>
+                <li>Functionality and correctness</li>
+                <li>Design patterns and best practices</li>
+                <li>Documentation and comments</li>
+            </ul>
+        </div>
+
+        <div class="instructions-actions">
+            <a href="{% url 'core:choose_assessment_question' assessment.assessment_url_token %}" class="btn-primary">
+                Choose Question Type
+            </a>
+            <a href="{% url 'core:candidate_dashboard' %}" class="btn-secondary">
+                Return to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <style>
+        .instructions-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .instructions-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .instructions-content {
+            margin-bottom: 30px;
+        }
+        .instructions-content h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #2196f3;
+        }
+        .instructions-content ul, .instructions-content ol {
+            margin-left: 20px;
+        }
+        .instructions-content li {
+            margin-bottom: 8px;
+        }
+        .instructions-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .btn-primary {
+            display: inline-block;
+            background: #2196f3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-secondary {
+            display: inline-block;
+            background: #9e9e9e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+{% endblock %}

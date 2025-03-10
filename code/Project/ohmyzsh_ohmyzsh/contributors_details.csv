@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjI1Nw==,robbyrussell,Robby Russell,16,,FALSE,4792,User,49819,9332,7,7,0,55,31,30
+MDQ6VXNlcjE0NDE3MDQ=,mcornella,Marc Cornellà,125,marc@mcornella.com,TRUE,615,User,83440,42241,202,177,24,190,45,40
+MDQ6VXNlcjY2OTA3MTg0,carlosala,Carlo Sala,563,carlosalag@protonmail.com,FALSE,198,User,8161,7329,67,54,12,340,7,7
+MDQ6VXNlcjI2MTg0NDc=,apjanke,Andrew Janke,327,andrew@apjanke.net,FALSE,151,User,34983,6944,64,39,25,0,25,24
+MDQ6VXNlcjEwMjQzMw==,fred-o,Fredrik Appelberg,28,,FALSE,42,User,7005,2532,2,2,0,0,0,0
+MDQ6VXNlcjE5NDEyMjE=,ncanceill,Nicolas Canceill,14,nicolas.canceill@gmail.com,FALSE,35,User,441,402,12,7,5,0,0,0
+MDQ6VXNlcjEyMTYyMQ==,To1ne,Toon Claes,16,toon@iotcl.com,FALSE,29,User,272,136,3,2,1,0,6,6
+MDQ6VXNlcjgzNTg=,felipec,Felipe Contreras,269,felipe.contreras@gmail.com,TRUE,263,User,8439,4275,18,17,1,0,0,0
+MDQ6VXNlcjIyMDQ1NDk=,LFDM,Gernot Höflechner,0,1986gh@gmail.com,FALSE,60,User,168,151,7,3,4,0,0,0
+MDQ6VXNlcjI1NzI2NTg2,dimensi0n,Erwan ROUSSEL,4,e-roussel@outlook.com,TRUE,64,User,245,8,21,19,1,0,1,1
+MDQ6VXNlcjI3MDQ=,geoffgarside,Geoff Garside,27,,FALSE,84,User,88,20,0,0,0,0,0,0
+Bot Account,dependabot[bot],dependabot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjExNDMwMA==,Kriechi,Thomas Kriechbaumer,88,,FALSE,151,User,335,132,5,5,0,2,0,0
+MDQ6VXNlcjEyMTU0OTc=,patrickelectric,Patrick José Pereira,1425,patrickelectric@gmail.com,TRUE,417,User,19,19,1,1,0,0,0,0
+MDQ6VXNlcjExODY4OTI=,bobwilliams,Bob Williams,0,,TRUE,33,User,3617,1082,3,2,1,0,0,0
+MDQ6VXNlcjQ4NjEz,betawaffle,Andrew Hodges,0,github@andyh.dev,FALSE,88,User,258,88,6,4,2,0,1,1
+MDQ6VXNlcjIwNzM=,imajes,James Cox,46,,TRUE,88,User,194,64,0,0,0,0,0,0
+MDQ6VXNlcjUzMDk5Mg==,mbologna,Michele Bologna,65,github@michelebologna.net,TRUE,47,User,519,97,27,12,15,0,0,0
+MDQ6VXNlcjEwMTE3MjE=,slavaGanzin,Slava,125,,FALSE,43,User,148,38,3,2,1,3,3,3
+MDQ6VXNlcjYwNDkyODg=,psprint,Sebastian Gniazdowski,0,sgniazdowski@gmail.com,TRUE,184,User,3788,212,14,10,4,0,1,1
+MDQ6VXNlcjMxNjkz,hakanensari,Hakan Ensari,352,hakanensari@gmail.com,FALSE,229,User,98,81,10,6,4,0,0,0
+Bot Account,ohmyzsh[bot],ohmyzsh[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjU5MTA1OQ==,mekanics,Alexandre Joly,598,,FALSE,32,User,1406,724,3,2,1,0,0,0
+MDQ6VXNlcjc1NzAyNzk=,mahi97,Mahi Rahimi,316,mohammadmahdi76@Gmail.com,TRUE,178,User,558,28,1,1,0,0,1,1
+MDQ6VXNlcjcxNzU0NA==,oknowton,Pat Regan,0,thehead@patshead.com,FALSE,29,User,487,106,3,1,2,0,1,1
+MDQ6VXNlcjE2NDgwNg==,curiousstranger,Matt Cable,0,github@curiousstranger.org,FALSE,5,User,146,13,6,3,3,0,0,0
+MDQ6VXNlcjI0NTQzNQ==,caarlos0,Carlos Alexandro Becker,2253,,TRUE,3879,User,267,212,2,2,0,0,0,0
+MDQ6VXNlcjExMjg3OA==,eproxus,Adam Lindberg,52,hello@alind.io,FALSE,181,User,390,142,4,2,2,0,1,1
+MDQ6VXNlcjEyMTkzOTk=,henryyan,Henry Yan,0,yanhonglei@gmail.com,TRUE,754,User,1542,77,6,2,4,0,0,0
+MDQ6VXNlcjU2MzY1MQ==,thcipriani,Tyler Cipriani,218,tyler@tylercipriani.com,FALSE,106,User,47,13,1,1,0,0,0,0

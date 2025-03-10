@@ -1,0 +1,221 @@
+{% extends "core/base.html" %}
+
+{% block title %}Candidate Dashboard - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <h2>Candidate Dashboard</h2>
+    <div class="welcome">
+        <p>Hello, {{ request.user.full_name|default:request.user.email }}</p>
+        <div class="user-info">
+            <p>Current user: {{ current_user }}</p>
+            <p>Current date: {{ current_date }}</p>
+        </div>
+    </div>
+
+    <div class="dashboard-content">
+        <h3>Your Assessments</h3>
+
+        {% if assessments %}
+            <div class="assessment-list">
+                {% for assessment in assessments %}
+                    <div class="assessment-card">
+                        <div class="assessment-header">
+                            <h4>{{ assessment.title }}</h4>
+                            <span class="assessment-status status-{{ assessment.status|lower }}">
+                                {{ assessment.get_status_display }}
+                            </span>
+                        </div>
+
+                        <div class="assessment-details">
+                            <p><strong>Created:</strong> {{ assessment.created_at|date:"Y-m-d H:i" }}</p>
+
+                            {% if assessment.status == 'SENT' %}
+                                <p>You have received an invitation for this assessment.</p>
+                                <a href="{% url 'core:accept_assessment_invite' assessment.id %}" class="btn-action">
+                                    Accept Invitation
+                                </a>
+                                <p class="expiry-note">
+                                    Expires on: {{ assessment.invite_expires_at|date:"Y-m-d H:i" }}
+                                </p>
+
+                            {% elif assessment.status == 'ACCEPTED' %}
+                                <p>You have accepted this assessment invitation.</p>
+                                <a href="{% url 'core:start_assessment' assessment.assessment_url_token %}" class="btn-action">
+                                    Start Assessment
+                                </a>
+                                <p class="expiry-note">
+                                    Must be started by: {{ assessment.invite_expires_at|date:"Y-m-d H:i" }}
+                                </p>
+
+                            {% elif assessment.status == 'STARTED' %}
+                                <div class="assessment-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: {{ assessment.progress }}%"></div>
+                                    </div>
+                                    <div class="progress-info">
+                                        {% if assessment.remaining_time %}
+                                            <p>Time remaining:
+                                                <strong>
+                                                    {{ assessment.remaining_time.hours }} hours,
+                                                    {{ assessment.remaining_time.minutes }} minutes
+                                                </strong>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="assessment-actions">
+                                    <a href="{% url 'core:view_assessment' assessment.assessment_url_token %}" class="btn-action">
+                                        Continue Working
+                                    </a>
+                                    <a href="{% url 'core:submit_assessment' assessment.assessment_url_token %}" class="btn-submit">
+                                        Submit Assessment
+                                    </a>
+                                </div>
+
+                            {% elif assessment.status == 'FINISHED' %}
+                                <p>Completed on: {{ assessment.end_time|date:"Y-m-d H:i" }}</p>
+                                {% if assessment.score is not None %}
+                                    <p>Your score: <strong>{{ assessment.score }}</strong></p>
+                                {% else %}
+                                    <p>Your submission is being evaluated.</p>
+                                {% endif %}
+
+                            {% else %}
+                                <p>Status: {{ assessment.get_status_display }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="no-assessments">
+                <p>You don't have any assessments yet.</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="actions">
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+
+    <style>
+        .welcome {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .user-info {
+            font-size: 0.8em;
+            color: #777;
+            text-align: right;
+        }
+        .assessment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .assessment-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .assessment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .assessment-header h4 {
+            margin: 0;
+        }
+        .assessment-status {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .status-sent {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+        .status-accepted {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .status-started {
+            background-color: #fff8e1;
+            color: #f57f17;
+        }
+        .status-finished {
+            background-color: #e0f2f1;
+            color: #00796b;
+        }
+        .status-scored {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+        .assessment-details {
+            margin-top: 10px;
+        }
+        .assessment-progress {
+            margin: 15px 0;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #4caf50;
+        }
+        .progress-info {
+            margin-top: 5px;
+            font-size: 0.9em;
+            text-align: right;
+        }
+        .assessment-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .btn-action {
+            display: inline-block;
+            background: #2196f3;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .btn-submit {
+            display: inline-block;
+            background: #f44336;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .expiry-note {
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #f57f17;
+        }
+        .no-assessments {
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
