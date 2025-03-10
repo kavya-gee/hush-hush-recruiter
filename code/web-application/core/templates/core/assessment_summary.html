@@ -1,0 +1,265 @@
+{% extends "core/base.html" %}
+
+{% block title %}Assessment Summary - Recruiter Platform{% endblock %}
+
+{% block content %}
+    <div class="summary-container">
+        <div class="summary-header">
+            <h2>Assessment Summary</h2>
+            <span class="assessment-status status-{{ assessment.status|lower }}">
+                {{ assessment.get_status_display }}
+            </span>
+        </div>
+
+        <div class="summary-content">
+            <div class="assessment-info">
+                <h3>{{ assessment.title }}</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Question Type:</span>
+                        <span class="info-value">{{ assessment.get_chosen_question_type_display }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Started:</span>
+                        <span class="info-value">{{ assessment.start_time|date:"Y-m-d H:i" }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Completed:</span>
+                        <span class="info-value">{{ assessment.end_time|date:"Y-m-d H:i" }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Duration:</span>
+                        <span class="info-value">
+                            {% if assessment.start_time and assessment.end_time %}
+                                {% with duration=assessment.end_time|timesince:assessment.start_time %}
+                                    {{ duration }}
+                                {% endwith %}
+                            {% else %}
+                                N/A
+                            {% endif %}
+                        </span>
+                    </div>
+                    {% if assessment.evaluation_score is not None %}
+                    <div class="info-item">
+                        <span class="info-label">Score:</span>
+                        <span class="info-value score">{{ assessment.evaluation_score }}/100</span>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if assessment.feedback %}
+            <div class="feedback-section">
+                <h3>Feedback</h3>
+                <div class="feedback-content">
+                    {{ assessment.feedback|linebreaks }}
+                </div>
+            </div>
+            {% elif assessment.status == 'FINISHED' %}
+            <div class="pending-feedback">
+                <p>Your assessment has been submitted and is being evaluated. Feedback will appear here once available.</p>
+            </div>
+            {% endif %}
+
+            <div class="submission-section">
+                <h3>Your Submission</h3>
+                <div class="language-info">
+                    <span>Language: <strong>{{ assessment.code_language|default:"Not specified" }}</strong></span>
+                </div>
+                <div class="code-display">
+                    <pre><code>{{ assessment.code_submission|default:"No submission found" }}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-footer">
+            <a href="{% url 'core:candidate_dashboard' %}" class="btn-primary">Back to Dashboard</a>
+            <div class="timestamp">
+                <p>Current Date and Time (UTC): {{ current_date }}</p>
+                <p>User: {{ current_user }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="evaluation-results">
+    <h3>Evaluation Results</h3>
+
+    {% if assessment.evaluation_status == 'EVALUATED' %}
+        <div class="score-section">
+            <div class="score-display">
+                <span class="score-label">Score:</span>
+                <span class="score-value {% if assessment.evaluation_score >= 80 %}score-high{% elif assessment.evaluation_score >= 50 %}score-medium{% else %}score-low{% endif %}">
+                    {{ assessment.evaluation_score|floatformat:1 }}%
+                </span>
+            </div>
+
+            {% if assessment.evaluation_results.test_results %}
+                <div class="test-results">
+                    <h4>Test Case Results</h4>
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Test Case</th>
+                                <th>Result</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for test in assessment.evaluation_results.test_results %}
+                                <tr class="{% if test.passed %}test-passed{% else %}test-failed{% endif %}">
+                                    <td>Test #{{ test.test_case }}</td>
+                                    <td>{{ test.passed|yesno:"Passed,Failed" }}</td>
+                                    <td>
+                                        {% if test.error %}
+                                            <div class="error-message">{{ test.error }}</div>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </div>
+
+    {% elif assessment.evaluation_status == 'EVALUATING' %}
+        <div class="evaluation-pending">
+            <div class="spinner"></div>
+            <p>Your solution is currently being evaluated...</p>
+            <p class="small-text">This should take less than a minute.</p>
+        </div>
+
+    {% elif assessment.evaluation_status == 'PENDING' %}
+        <div class="evaluation-pending">
+            <p>Your solution is waiting for evaluation.</p>
+        </div>
+
+    {% elif assessment.evaluation_status == 'FAILED' %}
+        <div class="evaluation-failed">
+            <p>An error occurred while evaluating your solution.</p>
+            <p>Our team has been notified and will review your submission manually.</p>
+        </div>
+
+    {% else %}
+        <div class="evaluation-not-started">
+            <p>Your solution has not been evaluated yet.</p>
+        </div>
+    {% endif %}
+</div>
+
+
+    <style>
+        .summary-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .summary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .assessment-status {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .status-finished {
+            background-color: #e0f2f1;
+            color: #00796b;
+        }
+        .status-scored {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+        .assessment-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .assessment-info h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .info-value {
+            font-weight: bold;
+        }
+        .info-value.score {
+            color: #4caf50;
+            font-size: 1.1em;
+        }
+        .feedback-section, .submission-section {
+            margin: 20px 0;
+        }
+        .feedback-content {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .pending-feedback {
+            background: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .language-info {
+            margin-bottom: 10px;
+        }
+        .code-display {
+            background: #272822;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+        .code-display pre {
+            margin: 0;
+        }
+        .code-display code {
+            color: #f8f8f2;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .summary-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .btn-primary {
+            background: #2196f3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .timestamp {
+            font-size: 0.8em;
+            color: #777;
+            text-align: right;
+        }
+    </style>
+{% endblock %}

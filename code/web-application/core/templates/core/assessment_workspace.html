@@ -1,0 +1,133 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Coding Assessment - Recruiter Platform{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'core/css/assessment_workspace.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="workspace-container">
+    <div class="workspace-header">
+        <div class="assessment-info">
+            <h2>{{ question.title }}</h2>
+            <span class="question-type-badge {{ assessment.chosen_question_type|lower }}">
+                {{ assessment.get_chosen_question_type_display }}
+            </span>
+        </div>
+        <div class="timer">
+            {% if remaining_time %}
+                <span id="hours">{{ remaining_time.hours }}</span>h
+                <span id="minutes">{{ remaining_time.minutes }}</span>m
+                <span id="seconds">0</span>s remaining
+            {% else %}
+                Time remaining: calculating...
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="workspace-content">
+        <div class="question-panel">
+            <div class="panel-header">
+                <h3>Instructions</h3>
+                <div class="panel-controls">
+                    <button id="expandBtn" onclick="toggleQuestionPanel()">Expand/Collapse</button>
+                </div>
+            </div>
+            <div class="question-content">
+                <div class="markdown-content">
+                    {{ question.description|linebreaks }}
+                </div>
+
+                {% if question.example_input or question.example_output %}
+                    <div class="examples">
+                        <h4>Examples:</h4>
+                        {% if question.example_input %}
+                            <div class="example">
+                                <div class="example-title">Input:</div>
+                                <pre>{{ question.example_input }}</pre>
+                            </div>
+                        {% endif %}
+
+                        {% if question.example_output %}
+                            <div class="example">
+                                <div class="example-title">Output:</div>
+                                <pre>{{ question.example_output }}</pre>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {% if question.constraints %}
+                    <div class="constraints">
+                        <h4>Constraints:</h4>
+                        <div class="markdown-content">
+                            {{ question.constraints|linebreaks }}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="editor-panel">
+            <div class="panel-header">
+                <div class="editor-controls">
+                    <label for="language-select">Language:</label>
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="python" {% if assessment.code_language == "python" %}selected{% endif %}>Python</option>
+                        <option value="javascript" {% if assessment.code_language == "javascript" %}selected{% endif %}>JavaScript</option>
+                        <option value="sql" {% if assessment.code_language == "sql" %}selected{% endif %}>SQL</option>
+                        <option value="html" {% if assessment.code_language == "html" %}selected{% endif %}>HTML</option>
+                        <option value="css" {% if assessment.code_language == "css" %}selected{% endif %}>CSS</option>
+                    </select>
+                    <div class="editor-actions">
+                        <button id="run-code" title="Run Code (Ctrl+Enter)">Run</button>
+                        <button id="reset-code" title="Reset to starter code">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="editor-container">
+                <div id="code-editor"></div>
+            </div>
+
+            <div class="output-panel">
+                <div class="panel-header">
+                    <h3>Output</h3>
+                    <button id="clear-output" title="Clear output">Clear</button>
+                </div>
+                <div id="output-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workspace-footer">
+        <div class="action-buttons">
+            <a href="{% url 'core:submit_assessment' assessment.assessment_url_token %}" class="btn-submit">
+                Submit Assessment
+            </a>
+        </div>
+        <div class="session-info">
+            <p>Session: {{ current_user }} | {{ current_date }}</p>
+        </div>
+    </div>
+
+    <!-- Hidden form for submitting code -->
+    <form id="code-form" method="post" action="{% url 'core:submit_assessment' assessment.assessment_url_token %}">
+        {% csrf_token %}
+        <input type="hidden" id="code-submission" name="code_submission" value="{{ assessment.code_submission }}">
+        <input type="hidden" id="code-language" name="code_language" value="{{ assessment.code_language }}">
+    </form>
+
+    <!-- For remaining_time data -->
+    {% if remaining_time %}
+    <input type="hidden" id="total-seconds" value="{{ remaining_time.total_seconds|default:86400 }}">
+    {% else %}
+    <input type="hidden" id="total-seconds" value="86400">
+    {% endif %}
+</div>
+
+<!-- CodeMirror 6 bundled script -->
+<script src="{% static 'core/js/bundle.js' %}"></script>
+{% endblock %}

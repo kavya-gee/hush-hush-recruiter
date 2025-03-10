@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjY1MjA3MA==,vinta,Vinta Chen,6,vinta.chen@gmail.com,TRUE,8190,User,5271,3851,1,1,0,8,0,0
+MDQ6VXNlcjQ1NjA0ODI=,dhamaniasad,Asad Dhamani,11,dhamaniasad@gmail.com,TRUE,1079,User,29,3,16,10,6,0,0,0
+MDQ6VXNlcjE3ODY0MQ==,ellisonleao,Ellison,133,ellisonleao@gmail.com,TRUE,1246,User,25,9,4,4,0,0,0,0
+MDQ6VXNlcjQ3MTQ5MTk0,ihebu,Iheb Haboubi,27,iheb.haboubi56@gmail.com,TRUE,59,User,14,0,7,7,0,0,0,0
+MDQ6VXNlcjU5MTExMw==,Alir3z4,Alireza Savand,0,,TRUE,163,User,7,1,3,3,0,0,0,0
+MDQ6VXNlcjQ0Nzgy,nicoe,Nicolas Évrard,210,,FALSE,55,User,7,4,1,1,0,0,0,0
+MDQ6VXNlcjM1MDkxMg==,agroszer,Adam Groszer,27,agroszer@gmail.com,TRUE,32,User,13,0,1,1,0,0,0,0
+MDQ6VXNlcjgyMzA1NA==,makrusak,Max Rusak,0,mak-rusak@yandex.ru,FALSE,34,User,67,45,1,1,0,0,0,0
+MDQ6VXNlcjU3NjI4MjI=,quobit,José Carlos García,3,,FALSE,150,User,14,8,9,3,6,0,0,0
+MDQ6VXNlcjEwNjgyNDU=,jhermann,Jürgen Hermann,150,jh@web.de,FALSE,198,User,14,1,7,3,2,0,0,0
+MDQ6VXNlcjU1NTY0OA==,sdispater,Sébastien Eustace,113,sebastien@eustace.io,FALSE,2226,User,1843,1693,3,2,1,0,0,0
+MDQ6VXNlcjY5NjI2NTc=,probar,,0,,FALSE,8,User,6,0,5,5,0,0,0,0
+MDQ6VXNlcjE4ODE4NzQ=,HBUHSD,,0,,FALSE,8,User,51,23,0,0,0,0,0,0
+MDQ6VXNlcjEyMTk0MTg=,kmonsoor,Khaled Monsoor,6,oss@kmonsoor.com,FALSE,125,User,7,0,6,5,1,0,0,0
+MDQ6VXNlcjE2MzQyNDc=,andrej2704,Andrej,0,,TRUE,10,User,6,0,8,5,3,0,0,0
+MDQ6VXNlcjU3OTg3NzQ=,checkcheckzz,Zach,0,checkcheckzach@gmail.com,FALSE,819,User,8,0,3,3,0,0,0,0
+MDQ6VXNlcjU4NzUzMTU=,Xuefeng-Zhu,Xuefeng Zhu,0,frankzhu94@gmail.com,TRUE,102,User,12,2,3,3,0,0,0,0
+MDQ6VXNlcjUwODkx,westurner,Wes Turner,371,,FALSE,158,User,7,0,5,4,1,0,0,0
+MDQ6VXNlcjUzODMzMjU=,houjunchen,Abner Chen,10,,FALSE,46,User,4,1,6,4,2,0,0,0
+MDQ6VXNlcjE1ODY4OQ==,tsunammis,Stan Chollet,0,stanislas.chollet@gmail.com,FALSE,84,User,11,3,1,1,0,0,0,0
+MDQ6VXNlcjE1MzY3NDg0,ReadmeCritic,,0,,FALSE,183,User,53,52,5,4,1,0,0,0
+MDQ6VXNlcjg0MzM1ODc=,spekulatius,Peter Thaleikis,9,,TRUE,603,User,4,4,3,3,0,0,0,0
+MDQ6VXNlcjExODMwMzkz,lee-kagiso,Lee,0,,FALSE,6,User,10,2,2,2,0,0,0,0
+MDQ6VXNlcjU4MDg0Mw==,jcupitt,John Cupitt,838,jcupitt@gmail.com,FALSE,411,User,559,571,2,1,1,0,0,0
+MDQ6VXNlcjg1NTAyNzA=,JarnoRFB,Rüdiger Busche,6,,FALSE,61,User,3,3,1,1,0,1,0,0
+MDQ6VXNlcjE0MjA5Nzgx,joshuarli,,177,,FALSE,209,User,3,3,2,2,0,0,0,0
+MDQ6VXNlcjk5MjY3MQ==,sangeeths,Sangeeth Saravanaraj,0,sangeeth.saravanaraj@gmail.com,FALSE,26,User,3,0,2,2,0,0,0,0
+MDQ6VXNlcjEwNzQ4Mzg2,preactive,Michael Messmer,0,,FALSE,10,User,4,1,1,1,0,0,0,0
+MDQ6VXNlcjE1ODEyNjIw,lk-geimfari,Isaak,107,hey@isaak.dev,TRUE,372,User,3,0,5,3,2,0,0,0
+MDQ6VXNlcjQyNzM4MTI=,aspyatkin,Aleksandr Piatkin,51,,FALSE,68,User,5,3,6,3,3,0,0,0

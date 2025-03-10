@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_closed,Issues_created
+MDQ6VXNlcjYzOTYwMQ==,zcbenz,Cheng,1324,,FALSE,7507,User,483259,287449,1205,1149,56,4120,92,96
+MDQ6VXNlcjY3MTM3OA==,kevinsawicki,Kevin Sawicki,0,kevinsawicki@gmail.com,FALSE,4941,User,156988,69282,474,464,10,143,91,91
+MDQ6VXNlcjIwMzYwNDA=,codebytere,Shelley Vohr,467,shelley.vohr@gmail.com,FALSE,3698,User,103465,76184,2016,1862,145,7341,36,39
+MDQ6VXNlcjY2MzQ1OTI=,MarshallOfSound,Samuel Attard,168,,FALSE,1929,User,175720,148840,1207,1112,93,3416,102,107
+MDQ6VXNlcjE3MjgwMA==,nornagon,Jeremy Rose,235,nornagon@nornagon.net,FALSE,680,User,202633,183255,1360,1241,116,2260,115,122
+MDQ6VXNlcjk2NDM4Ng==,deepak1556,Robo,191,hop2deep@gmail.com,FALSE,722,User,62345,42810,629,589,37,2126,55,59
+MDQ6VXNlcjE4NDAzMDA1,electron-bot,Electron Bot,0,electron@github.com,FALSE,218,User,51253,58486,375,323,52,1,0,0
+MDQ6VXNlcjEyODEyMzQ=,miniak,Milan Burda,6,milan.burda@gmail.com,FALSE,86,User,38677,43898,1096,953,143,1097,43,43
+MDQ6VXNlcjIyODk=,zeke,Zeke Sikelianos,552,zeke@sikelianos.com,FALSE,2832,User,52049,73631,147,135,12,199,24,25
+MDQ6VXNlcjcwMzgx,ckerr,Charles Kerr,261,,FALSE,728,User,39969,75435,654,549,98,2659,56,63
+Bot Account,sudowoodo-release-bot[bot],sudowoodo-release-bot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjYwNzI1MA==,alexeykuzmin,Aleksei Kuzmin,0,github@alexeykuzmin.com,FALSE,84,User,12077,6573,213,179,34,670,90,90
+MDQ6VXNlcjQ5MzYyMDE=,preco21,Preco Kim,44,plusb21@gmail.com,FALSE,174,User,62385,23008,108,79,29,1,3,3
+MDQ6VXNlcjU4MjA2NTQ=,dsanders11,David Sanders,636,dsanders11@ucsbalum.com,FALSE,283,User,10516,7823,387,371,12,460,31,34
+MDQ6VXNlcjE0MjY3OTk=,felixrieseberg,Felix Rieseberg,203,felix@felixrieseberg.com,FALSE,4772,User,11464,5713,146,135,9,154,25,27
+MDQ6VXNlcjkxNzk0NQ==,aroben,Adam Roben,0,adam@roben.org,FALSE,458,User,8872,2080,0,0,0,0,0,0
+MDQ6VXNlcjI1NTc0NDU=,hokein,Haojian Wu,210,hokein.wu@gmail.com,TRUE,541,User,11884,3522,68,63,5,10,7,7
+MDQ6VXNlcjEzOTY=,anaisbetts,Ani Betts,204,anais@anaisbetts.org,FALSE,2211,User,6793,3660,57,49,8,10,87,88
+MDQ6VXNlcjE2OTA0NTg=,brenca,Heilig Benedek,0,benecene@gmail.com,FALSE,64,User,146730,70532,94,85,9,56,6,6
+MDQ6VXNlcjYwOTA1Mg==,jkleinsc,John Kleinschmidt,121,jkleinsc@electronjs.org,FALSE,267,User,13767,9646,614,543,70,4487,27,28
+Bot Account,electron-roller[bot],electron-roller[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjQ2MjQ0MTE=,VerteDinde,Keeley Hammond,123,,TRUE,292,User,15434,15243,448,372,76,1658,10,14
+MDQ6VXNlcjEzMDU2MTc=,jlord,Jessica Lord,31,,FALSE,16407,User,9718,6674,32,31,1,0,2,2
+MDQ6VXNlcjM5NzU5,max-mapper,Max,113,,FALSE,6673,User,357,247,3,3,0,0,23,23
+Bot Account,dependabot[bot],dependabot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjE2MDEwMDc2,erickzhao,Erick Zhao,325,erickzhao@electronjs.org,FALSE,438,User,7699,3531,188,174,12,382,7,7
+MDQ6VXNlcjEwNTk2OTk=,gerhardberger,Gellert Hegyi,29,gellihegyi@gmail.com,TRUE,86,User,8475,4951,27,21,5,9,6,6
+MDQ6VXNlcjE3NjEyMTE1,tinydew4,J,2,,TRUE,24,User,4053,2168,37,36,1,1,0,0
+MDQ6VXNlcjEzMTkwMjg=,poiru,Biru Mohanathas,134,,FALSE,144,User,4111,1031,77,70,7,92,13,14
+MDQ6VXNlcjE2NTYzMjQ=,samuelmaddock,Sam Maddock,275,sam@samuelmaddock.com,FALSE,340,User,13932,2689,115,95,14,260,32,37

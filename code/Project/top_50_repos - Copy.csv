@@ -1,0 +1,34 @@
+Repo Name,Repo Owner,Repo URL,Stars,Forks,Number of Contributors,Pull Requests (Open),Pull Requests (Closed),Open Issues,Language
+free-programming-books,EbookFoundation,https://github.com/EbookFoundation/free-programming-books,351162,62865,433,55,More than 100 closed issues,29,HTML
+build-your-own-x,codecrafters-io,https://github.com/codecrafters-io/build-your-own-x,341522,31597,119,163,More than 100 closed issues,190,Markdown
+public-apis,public-apis,https://github.com/public-apis/public-apis,328433,34822,427,412,More than 100 closed issues,51,Shell
+system-design-primer,donnemartin,https://github.com/donnemartin/system-design-primer,290192,48257,112,247,More than 100 closed issues,235,Python
+996.ICU,996icu,https://github.com/996icu/996.ICU,270313,21127,396,4,More than 100 closed issues,0,Unknown
+awesome-python,vinta,https://github.com/vinta/awesome-python,235208,25337,370,427,More than 100 closed issues,0,Python
+react,facebook,https://github.com/facebook/react,232601,47696,413,181,More than 100 closed issues,772,JavaScript
+project-based-learning,practical-tutorials,https://github.com/practical-tutorials/project-based-learning,218902,28535,100,92,More than 100 closed issues,113,Unknown
+awesome-selfhosted,awesome-selfhosted,https://github.com/awesome-selfhosted/awesome-selfhosted,218145,10283,402,0,More than 100 closed issues,0,Unknown
+vue,vuejs,https://github.com/vuejs/vue,208411,33720,357,247,More than 100 closed issues,354,JavaScript
+Python,TheAlgorithms,https://github.com/TheAlgorithms/Python,197649,46302,456,289,More than 100 closed issues,64,Python
+javascript-algorithms,trekhleb,https://github.com/trekhleb/javascript-algorithms,190227,30499,208,228,More than 100 closed issues,129,JavaScript
+tensorflow,tensorflow,https://github.com/tensorflow/tensorflow,188247,74552,0,0,0,0,Python
+You-Dont-Know-JS,getify,https://github.com/getify/You-Dont-Know-JS,181131,33594,0,0,0,0,Unknown
+ohmyzsh,ohmyzsh,https://github.com/ohmyzsh/ohmyzsh,176321,26017,0,0,0,0,Shell
+computer-science,ossu,https://github.com/ossu/computer-science,175924,22314,0,0,0,0,Unknown
+bootstrap,twbs,https://github.com/twbs/bootstrap,171628,79021,0,0,0,0,JavaScript
+flutter,flutter,https://github.com/flutter/flutter,168834,28084,0,0,0,0,Dart
+vscode,microsoft,https://github.com/microsoft/vscode,167790,30713,0,0,0,0,JavaScript
+gitignore,github,https://github.com/github/gitignore,164650,83123,0,0,0,0,Unknown
+javascript,airbnb,https://github.com/airbnb/javascript,146171,26642,0,0,0,0,JavaScript
+transformers,huggingface,https://github.com/huggingface/transformers,140170,28108,0,0,0,0,Python
+awesome-go,avelino,https://github.com/avelino/awesome-go,138758,12113,0,0,0,0,Go
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134387,10217,0,0,0,0,Makefile
+ollama,ollama,https://github.com/ollama/ollama,129425,10563,0,0,0,0,TypeScript
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,126950,23305,0,0,0,0,Markdown
+go,golang,https://github.com/golang/go,126058,17904,0,0,0,0,Shell
+Microsoft-Activation-Scripts,massgravel,https://github.com/massgravel/Microsoft-Activation-Scripts,121913,11801,0,0,0,0,Batchfile
+react-native,facebook,https://github.com/facebook/react-native,120751,24518,0,0,0,0,Objective-C
+scrcpy,Genymobile,https://github.com/Genymobile/scrcpy,118109,11157,0,0,0,0,Meson
+electron,electron,https://github.com/electron/electron,115610,15822,0,0,0,0,C++
+PowerToys,microsoft,https://github.com/microsoft/PowerToys,115082,6777,0,0,0,0,Batchfile
+kubernetes,kubernetes,https://github.com/kubernetes/kubernetes,113323,40303,0,0,0,0,Python
