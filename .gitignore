@@ -160,4 +160,4 @@ cython_debug/
 .idea/
 .venv/
 node_modules/
-core/static/core/js/bundle.js*
+code/web-application/core/static/core/js/bundle.js*
