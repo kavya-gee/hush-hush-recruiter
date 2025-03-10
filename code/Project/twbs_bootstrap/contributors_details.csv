@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjk4Njgx,mdo,Mark Otto,2,markdotto@gmail.com,FALSE,23403,User,1482662,1279628,961,837,114,1644,137,130
+MDQ6VXNlcjQxOTg4NA==,cvrebert,Chris Rebert,44,,FALSE,2296,User,84050,98753,888,852,36,2,353,353
+MDQ6VXNlcjM0OTYyMQ==,XhmikosR,,672,,TRUE,3339,User,342008,311895,1526,1435,88,2162,214,204
+MDQ6VXNlcjE2OTcwNQ==,fat,fat,3,,FALSE,8709,User,322392,205152,29,26,3,0,17,17
+Bot Account,dependabot[bot],dependabot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjg5NTgzMQ==,patrickhlauke,Patrick H. Lauke,195,,FALSE,1125,User,12305,10572,302,264,35,302,77,67
+MDQ6VXNlcjE2ODk3NTA=,Johann-S,Johann-S,35,,TRUE,854,User,40754,32712,247,210,35,679,29,28
+MDQ6VXNlcjExNTU5MjE2,MartijnCuppens,Martijn Cuppens,21,,TRUE,547,User,9022,8537,349,307,42,625,61,60
+MDQ6VXNlcjE3MzgxNjY2,julien-deramond,Julien Déramond,1103,,TRUE,324,User,3784,3057,326,273,25,338,23,17
+MDQ6VXNlcjIyNDA2MDYz,GeoSot,GeoSot,50,,FALSE,237,User,17678,12121,192,153,28,262,26,16
+MDQ6VXNlcjEwNjg5Nzg=,hnrch02,Heinrich Fenkart,0,hnrch02@gmail.com,FALSE,314,User,38665,4352,84,71,13,1,16,16
+Bot Account,dependabot-preview[bot],dependabot-preview[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjM1MzU2NzU=,juthilo,Julian Thilo,3,bigj95t@gmail.com,FALSE,470,User,3189,1755,32,31,1,0,7,7
+MDQ6VXNlcjI4OTA1NzA=,ffoodd,Gaël Poupard,172,,FALSE,450,User,30500,3869,137,111,24,489,11,8
+MDQ6VXNlcjQwNjU3NjU=,ysds,Shohei Yoshida,1,ysds.code@gmail.com,FALSE,390,User,1284,1070,109,101,8,110,58,57
+MDQ6VXNlcjEyMTI4ODU=,coliff,Christian Oliff,1102,,FALSE,495,User,1069,336,116,98,17,19,46,35
+MDQ6VXNlcjk4MzU1Njk=,twbs-grunt,Bootstrap's Auto-Grunt Bot,0,,FALSE,130,User,1321,705,0,0,0,0,0,0
+U_kgDOBXszTw,louismaximepiton,Louis-Maxime Piton,137,louismaxime.piton@orange.com,FALSE,29,User,2179,1627,,,,129,8,8
+MDQ6VXNlcjEwNzM2ODE=,bardiharborow,Bardi Harborow,3,bardi@bardiharborow.com,FALSE,625,User,30891,27947,68,61,7,94,14,14
+MDQ6VXNlcjI2OTIyODY2,rohit2sharma95,Rohit Sharma,0,rohit2sharma95@gmail.com,FALSE,85,User,2229,1592,66,59,7,117,12,12
+MDQ6VXNlcjM3NTczMTk=,vsn4ik,Vasilii A,10,,FALSE,83,User,338,631,77,63,14,23,8,8
+MDQ6VXNlcjk0NzExMA==,kkirsche,Kevin Kirsche,33,Kev.Kirsche+GitHub@gmail.com,FALSE,225,User,432,181,123,69,54,0,16,16
+MDQ6VXNlcjMyNTA1NTI=,pvdlg,Pierre Vanduynslager,2,pierre.denis.vanduynslager@gmail.com,TRUE,226,User,96228,66249,55,27,28,11,2,2
+MDQ6VXNlcjE4MzIwMzc=,andresgalante,Andres Galante,5,,TRUE,498,User,487,299,77,53,24,118,12,10
+MDQ6VXNlcjc4ODI2Ng==,pat270,Patrick Yeo,153,,FALSE,31,User,394,333,51,40,11,3,5,5
+MDQ6VXNlcjk4NTgzOA==,zalog,Catalin Zalog,8,,FALSE,62,User,251,279,78,46,32,6,1,0
+MDQ6VXNlcjc3MTQxMzM=,gijsbotje,Gijs Boddeus,78,,FALSE,15,User,57584,78583,26,23,3,5,2,2
+MDQ6VXNlcjgwMTQ0,StevenBlack,Steven Black,514,steveb@stevenblack.com,TRUE,1557,User,267,267,26,20,6,0,1,1
+MDQ6VXNlcjIxNjMzOQ==,glebm,Gleb Mazovetskiy,325,,FALSE,892,User,2343,1566,12,8,4,8,3,3
+MDQ6VXNlcjE3MTA1NA==,burnsra,Robert Burns,7,,FALSE,82,User,341,419,27,22,5,0,0,0

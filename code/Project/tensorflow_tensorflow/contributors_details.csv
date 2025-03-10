@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjE3MTUxODky,tensorflower-gardener,TensorFlower Gardener,0,,FALSE,885,User,506380,362942,0,0,0,0,0,0
+MDQ6VXNlcjExNzQzNzg=,ezhulenev,Eugene Zhulenev,1429,ezhulenev@google.com,TRUE,512,User,235902,167350,3,3,0,170,0,0
+MDQ6VXNlcjMyMzE5OQ==,mihaimaruseac,Mihai Maruseac,628,mihaimaruseac@google.com,FALSE,837,User,0,0,835,801,34,3606,1,1
+MDQ6VXNlcjE0MzA5Nzcy,akuegel,Adrian Kuegel,587,,FALSE,100,User,111869,69579,0,0,0,192,0,0
+MDQ6VXNlcjM0ODkzMg==,hawkinsp,Peter Hawkins,742,,FALSE,486,User,317787,250400,4,4,0,91,1,1
+MDQ6VXNlcjY5MzIzNDg=,yongtang,Yong Tang,376,,TRUE,677,User,734171,262707,822,718,104,136,19,19
+MDQ6VXNlcjc5NDY4MDk=,gunan,Gunhan Gulsoy,38,,FALSE,389,User,2215744,1526310,262,222,40,1043,9,8
+MDQ6VXNlcjE2ODI0NzAy,caisq,Shanqing Cai,1,,FALSE,414,User,1137243,342582,254,179,75,496,18,18
+MDQ6VXNlcjE5MjE0Mg==,mrry,Derek Murray,45,derek.murray@gmail.com,FALSE,609,User,248685,93950,95,91,4,329,24,24
+MDQ6VXNlcjM0ODk1OQ==,cheshire,George Karpenkov,148,cheshire@google.com,FALSE,196,User,91482,84887,2,2,0,343,1,1
+MDQ6VXNlcjcxMDYzNDc=,roserg,Roman Sorokin,0,sorok-roma@yandex.ru,FALSE,10,User,118834,94850,0,0,0,0,0,0
+MDQ6VXNlcjY5Njk2ODY=,benoitsteiner,Benoit Steiner,0,,FALSE,514,User,2333269,630597,102,82,20,139,0,0
+MDQ6VXNlcjcwNjc2Ng==,jpienaar,Jacques Pienaar,156,,FALSE,131,User,251513,265485,5,4,1,133,0,0
+MDQ6VXNlcjUxMTg4ODE=,qlzh727,Qianli Scott Zhu,1,scottzhu@google.com,FALSE,252,User,231085,327352,16,10,6,151,1,1
+MDQ6VXNlcjE2NTQy,d0k,Benjamin Kramer,537,,FALSE,257,User,98194,41881,0,0,0,20,0,0
+MDQ6VXNlcjI4ODMyOTA5,River707,River Riddle,1,,FALSE,65,User,133603,101839,0,0,0,2,0,0
+MDQ6VXNlcjMzNzIzMDA=,joker-eph,Mehdi Amini,119,,FALSE,210,User,110189,65692,4,0,4,154,0,0
+MDQ6VXNlcjU3NzI3Nw==,martinwicke,Martin Wicke,1,,FALSE,465,User,2138776,788440,122,92,30,513,4,4
+MDQ6VXNlcjMyNTIyMDk1,pifon2a,Alexander Belyaev,316,,FALSE,36,User,122066,137535,1,0,1,21,0,0
+MDQ6VXNlcjExOTIyNjU=,yifeif,Yifei Feng,0,,FALSE,643,User,1509162,845369,222,174,48,419,0,0
+MDQ6VXNlcjc1MjM5ODI=,chsigg,Christian Sigg,255,csigg@google.com,FALSE,38,User,387394,113298,2,1,1,312,0,0
+MDQ6VXNlcjM3MzEwMjU=,allenlavoie,Allen Lavoie,0,,FALSE,302,User,95134,31945,10,8,2,129,0,0
+MDQ6VXNlcjE5OTAwNzk=,smit-hinsu,Smit Hinsu,0,,FALSE,48,User,38086,21879,2,1,1,57,0,0
+MDQ6VXNlcjExMTMyOTA4,jreiffers,Johannes Reifferscheid,248,,TRUE,14,User,119135,70282,0,0,0,0,0,0
+MDQ6VXNlcjEwNzIwNzk=,jsimsa,Jiri Simsa,0,,FALSE,101,User,118134,99180,9,8,1,184,1,1
+MDQ6VXNlcjExNDEyODc=,yangustc07,Yang Chen,74,,FALSE,52,User,50949,16027,1,1,0,7,0,0
+MDQ6VXNlcjg2ODAwNzc0,klucke,Kyle Lucke,1,,FALSE,3,User,41140,53756,0,0,0,1,0,0
+MDQ6VXNlcjE3OTQ3MTU=,ebrevdo,Eugene Brevdo,38,,FALSE,319,User,133094,47394,4,2,2,145,3,3
+MDQ6VXNlcjUwNjE=,alextp,Alexandre Passos,0,alexandre.tp@gmail.com,FALSE,585,User,58399,36653,9,8,1,581,0,0
+MDQ6VXNlcjMxNzAzODQ2,ddunl,David,689,,FALSE,16,User,59601,76647,0,0,0,3,0,0

@@ -1,0 +1,31 @@
+Git_Contributor_ID,Git_UserName,Git_Contributor_Name,Number_of_Commits,Email_ID,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_closed,Issues_created
+MDQ6VXNlcjczNTMzNzM=,thomwolf,Thomas Wolf,24,,TRUE,3003,User,403165,167007,99,77,22,259,6,6
+MDQ6VXNlcjM1OTAxMDgy,sgugger,Sylvain Gugger,0,,FALSE,3436,User,334254,272864,1043,1015,28,5119,12,12
+MDQ6VXNlcjMwNzU1Nzc4,LysandreJik,Lysandre Debut,86,hi@lysand.re,FALSE,1598,User,123847,112590,528,466,57,3554,36,39
+MDQ6VXNlcjI1MjE2Mjg=,ydshieh,Yih-Dar,361,,FALSE,224,User,73224,29595,1144,1032,107,1322,37,46
+MDQ6VXNlcjIzNDIzNjE5,patrickvonplaten,Patrick von Platen,186,,FALSE,1910,User,156107,33257,713,627,86,1490,81,93
+MDQ6VXNlcjEwNjc2MTAz,stas00,Stas Bekman,381,,FALSE,1831,User,40625,16016,560,509,47,401,175,197
+MDQ6VXNlcjEyMjQwODQ0,gante,Joao Gante,333,joaofranciscocardosogante@gmail.com,FALSE,372,User,52106,65102,518,451,53,864,17,21
+MDQ6VXNlcjMyNjU3Nw==,julien-c,Julien Chaumond,196,julien@huggingface.co,FALSE,1735,User,43729,59516,105,100,5,426,6,6
+MDQ6VXNlcjQ4NTk1OTI3,ArthurZucker,Arthur,324,,FALSE,527,User,98329,37016,414,345,56,2436,17,27
+MDQ6VXNlcjEyODY2NTU0,Rocketknight1,Matt,112,,FALSE,388,User,69601,24657,339,299,28,583,10,11
+MDQ6VXNlcjQ5MjQwNTk5,younesbelkada,Younes Belkada,200,,TRUE,780,User,43551,8469,375,318,56,572,10,12
+MDQ6VXNlcjYwNDUwMjU=,sshleifer,Sam Shleifer,1,,FALSE,432,User,23060,9472,337,273,64,351,186,188
+MDQ6VXNlcjQ4MzI3MDAx,NielsRogge,,289,,FALSE,3236,User,212042,13288,331,272,52,557,39,49
+MDQ6VXNlcjIyNjE0OTI1,amyeroberts,,244,,FALSE,321,User,59538,45974,275,238,29,2303,14,21
+MDQ6VXNlcjIwNDMyMQ==,Narsil,Nicolas Patry,528,,FALSE,724,User,21678,10373,291,235,53,302,8,8
+MDQ6VXNlcjI3MTM3NTY2,patil-suraj,Suraj Patil,22,surajp815@gmail.com,FALSE,993,User,44297,4547,234,200,32,386,11,12
+MDQ6VXNlcjE2MTA3NjE5,VictorSanh,Victor SANH,6,,FALSE,420,User,13116,4630,18,17,1,20,7,7
+U_kgDOBgDLhQ,zucchini-nlp,Raushan Turganbay,226,raushan@huggingface.co,FALSE,95,User,57287,18820,,,,310,6,11
+MDQ6VXNlcjM2NTM3ODk=,mrm8488,Manuel Romero,19,mrm8488@gmail.com,TRUE,307,User,6954,166,154,149,5,7,10,10
+U_kgDOBZhWpw,sanchit-gandhi,Sanchit Gandhi,127,,FALSE,798,User,17507,2586,,,,312,22,26
+Bot Account,dependabot[bot],dependabot[bot],0,Not Public,FALSE,0,Bot,0,0,,,,0,0,0
+MDQ6VXNlcjc4MzE4OTU=,muellerzr,Zach Mueller,265,,FALSE,1261,User,7020,3753,168,143,18,358,2,4
+MDQ6VXNlcjIyNDE1MjA=,mfuntowicz,Funtowicz Morgan,99,,TRUE,289,User,14182,12816,90,66,24,108,2,2
+MDQ6VXNlcjU5NDYyMzU3,stevhliu,Steven Liu,325,,FALSE,185,User,15710,11450,128,116,9,574,4,5
+MDQ6VXNlcjk1OTU5MA==,jplu,Julien Plu,4,,FALSE,54,User,27342,15386,140,119,21,139,4,4
+MDQ6VXNlcjc4ODkxMA==,aaugustin,Aymeric Augustin,305,,FALSE,1291,User,22312,18749,12,12,0,13,4,4
+MDQ6VXNlcjU3MTk2NTEw,SunMarc,Marc Sun,214,,FALSE,162,User,4594,696,99,89,6,362,1,2
+MDQ6VXNlcjIwNjUxMzg3,stefan-it,Stefan Schweter,304,,FALSE,537,User,7179,585,47,42,5,43,22,26
+MDQ6VXNlcjM4ODUwNDQ=,rlouf,Rémi Louf,611,,FALSE,493,User,7353,4055,14,13,1,6,0,0
+MDQ6VXNlcjI0NDc3ODQx,faaany,Fanli Lin,143,fanli.lin@intel.com,FALSE,14,User,686,548,84,75,9,11,1,2

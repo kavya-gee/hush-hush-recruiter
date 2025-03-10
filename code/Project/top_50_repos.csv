@@ -1,0 +1,34 @@
+Repo_Name,Repo_Owner,Repo_URL,Stars,Forks,Number_of_Contributors,Pull_Requests_Open,Pull_Requests_Closed,Open_Issues,Language
+free-programming-books,EbookFoundation,https://github.com/EbookFoundation/free-programming-books,351754,62922,432,56,More than 100 closed issues,31,HTML
+build-your-own-x,codecrafters-io,https://github.com/codecrafters-io/build-your-own-x,348938,32368,119,162,More than 100 closed issues,193,Markdown
+public-apis,public-apis,https://github.com/public-apis/public-apis,329105,34892,427,417,More than 100 closed issues,51,Shell
+system-design-primer,donnemartin,https://github.com/donnemartin/system-design-primer,291036,48369,112,247,More than 100 closed issues,235,Python
+996.ICU,996icu,https://github.com/996icu/996.ICU,270371,21119,396,4,More than 100 closed issues,0,Unknown
+awesome-python,vinta,https://github.com/vinta/awesome-python,236221,25371,370,430,More than 100 closed issues,0,Python
+react,facebook,https://github.com/facebook/react,232923,47805,413,191,More than 100 closed issues,770,JavaScript
+project-based-learning,practical-tutorials,https://github.com/practical-tutorials/project-based-learning,219793,28667,100,93,More than 100 closed issues,114,Unknown
+awesome-selfhosted,awesome-selfhosted,https://github.com/awesome-selfhosted/awesome-selfhosted,219358,10322,402,0,More than 100 closed issues,0,Unknown
+vue,vuejs,https://github.com/vuejs/vue,208431,33728,357,248,More than 100 closed issues,355,JavaScript
+Python,TheAlgorithms,https://github.com/TheAlgorithms/Python,197929,46356,456,297,More than 100 closed issues,64,Python
+javascript-algorithms,trekhleb,https://github.com/trekhleb/javascript-algorithms,190353,30521,208,229,More than 100 closed issues,130,JavaScript
+tensorflow,tensorflow,https://github.com/tensorflow/tensorflow,188425,74571,409,6654,More than 100 closed issues,787,Python
+You-Dont-Know-JS,getify,https://github.com/getify/You-Dont-Know-JS,181217,33595,178,44,More than 100 closed issues,80,Unknown
+ohmyzsh,ohmyzsh,https://github.com/ohmyzsh/ohmyzsh,176492,26013,396,345,More than 100 closed issues,134,Shell
+computer-science,ossu,https://github.com/ossu/computer-science,176145,22368,147,0,More than 100 closed issues,13,Unknown
+bootstrap,twbs,https://github.com/twbs/bootstrap,171705,79046,360,182,More than 100 closed issues,483,JavaScript
+flutter,flutter,https://github.com/flutter/flutter,168982,28138,381,0,More than 100 closed issues,13002,Dart
+vscode,microsoft,https://github.com/microsoft/vscode,168153,30834,332,502,More than 100 closed issues,8887,JavaScript
+gitignore,github,https://github.com/github/gitignore,164842,83104,410,498,More than 100 closed issues,0,Unknown
+javascript,airbnb,https://github.com/airbnb/javascript,146206,26675,402,73,More than 100 closed issues,95,JavaScript
+transformers,huggingface,https://github.com/huggingface/transformers,140748,28207,436,589,More than 100 closed issues,1020,Python
+awesome-go,avelino,https://github.com/avelino/awesome-go,139284,12140,428,108,More than 100 closed issues,6,Go
+youtube-dl,ytdl-org,https://github.com/ytdl-org/youtube-dl,134531,10227,388,498,More than 100 closed issues,3690,Makefile
+ollama,ollama,https://github.com/ollama/ollama,131391,10786,434,202,More than 100 closed issues,1361,TypeScript
+fucking-algorithm,labuladong,https://github.com/labuladong/fucking-algorithm,127090,23316,87,40,More than 100 closed issues,2,Markdown
+go,golang,https://github.com/golang/go,126228,17928,386,331,More than 100 closed issues,9181,Shell
+Microsoft-Activation-Scripts,massgravel,https://github.com/massgravel/Microsoft-Activation-Scripts,123860,12060,8,0,32,5,Batchfile
+react-native,facebook,https://github.com/facebook/react-native,120886,24537,309,299,More than 100 closed issues,596,Objective-C
+scrcpy,Genymobile,https://github.com/Genymobile/scrcpy,118555,11209,139,56,More than 100 closed issues,2227,Meson
+electron,electron,https://github.com/electron/electron,115694,15861,376,90,More than 100 closed issues,864,C++
+PowerToys,microsoft,https://github.com/microsoft/PowerToys,115444,6800,418,75,More than 100 closed issues,5888,Batchfile
+kubernetes,kubernetes,https://github.com/kubernetes/kubernetes,113488,40356,346,691,More than 100 closed issues,1891,Python

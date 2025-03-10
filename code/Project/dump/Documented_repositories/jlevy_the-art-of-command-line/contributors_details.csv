@@ -1,0 +1,61 @@
+Git_Contributor_ID,Git_Contributor_Name,Number_of_Commits,Email_ID,Git_Score,Hireable,Followers,Type_of_User,number of additions,number of deletions,PRs_Created,PRs_Merged,PRs_Closed,PRs_reviewed,Issues_created,Issues_closed
+MDQ6VXNlcjIwNTgxNjc=,Joshua Levy,484,joshua@cal.berkeley.edu,5975,FALSE,4182,User,15400,3744,18,18,0,6,48,10
+MDQ6VXNlcjE2MTQwMDk=,Peter Kokot,54,peterkokot@gmail.com,1461,FALSE,1119,User,983,356,41,38,1,0,0,0
+MDQ6VXNlcjgwOTg0NTI=,Chujie Zeng,46,chujie.zeng@gmail.com,270,TRUE,86,User,12310,2025,8,8,0,8,1,1
+MDQ6VXNlcjExNTUzMzY=,Stepan Babala,38,stepan0904@gmail.com,90,FALSE,42,User,897,132,6,6,0,0,0,0
+MDQ6VXNlcjMyMjEzNQ==,Éric Guirbal,33,,336,FALSE,24,User,943,187,16,15,1,0,0,0
+MDQ6VXNlcjYyNjczNDA=,Oleg Berman,27,bermanoleg@gmail.com,561,TRUE,80,User,2166,1296,2,2,0,0,0,0
+MDQ6VXNlcjIyOTE1Mjk=,Nilton Vasques,25,,353,TRUE,48,User,1385,483,1,1,0,0,1,1
+MDQ6VXNlcjg4NTg4NjU=,Anna Damtsa,25,,41,FALSE,15,User,738,165,6,6,0,1,1,1
+MDQ6VXNlcjE2MjQ1Mzc=,Ungsik Yun,23,ungsik.yun@gmail.com,73,TRUE,20,User,4614,1215,3,3,0,1,0,0
+MDQ6VXNlcjEyMTI3MTY=,Diomidis Spinellis,15,dds@aueb.gr,1740,FALSE,1551,User,154,89,9,8,0,4,2,1
+MDQ6VXNlcjc4NjkxMjk=,,14,,54,FALSE,9,User,562,37,1,1,0,1,1,0
+MDQ6VXNlcjkwNTQxMw==,spmbt,13,,35,FALSE,18,User,209,223,0,0,0,0,0,0
+MDQ6VXNlcjQ1NTAzNTM=,Xu Chunyang,13,xuchunyang56@gmail.com,1678,TRUE,327,User,235,230,7,6,1,0,0,0
+MDQ6VXNlcjEyMTYxNTA0,Martin Folkers,12,hello@twobrain.io,1167,FALSE,33,User,730,235,1,1,0,0,0,0
+MDQ6VXNlcjcwMzA2NzE=,ClumsyLee,12,,257,FALSE,104,User,47,32,1,1,0,0,0,0
+MDQ6VXNlcjMyMzE5OQ==,Mihai Maruseac,11,mihaimaruseac@google.com,1957,FALSE,837,User,743,147,3,2,1,2,1,1
+MDQ6VXNlcjYyNDk0OA==,Lakshmipathi Ganapathi,10,,409,TRUE,45,User,24,5,1,1,0,0,0,0
+MDQ6VXNlcjgxOTI5,Dmytro Kovalov (uk: Дмитро Ковальов),9,dmytro@smartpay.co,145,FALSE,37,User,220,145,4,4,0,1,0,0
+MDQ6VXNlcjczOTIz,Fernando Almeida,8,fernando@fernandoalmeida.net,2306,FALSE,87,User,218,218,2,1,0,0,0,0
+MDQ6VXNlcjYyMTQ4NjE=,Dongliang Mu,8,dzm91@hust.edu.cn,706,FALSE,471,User,840,179,6,4,2,0,4,3
+MDQ6VXNlcjgxOTk3MTc=,Michael Kwardakov,8,kwardakov@gmail.com,44,FALSE,6,User,205,108,14,14,0,2,0,0
+MDQ6VXNlcjE0OTcwNTk=,Gernot Pointner,7,gernot.pointner@googlemail.com,153,FALSE,25,User,112,101,0,0,0,0,1,0
+MDQ6VXNlcjQ1Mjc5Mjg=,Laurent Lyaudet,7,Laurent.Lyaudet@gmail.com,135,FALSE,7,User,12,12,7,6,0,0,0,0
+MDQ6VXNlcjExODE2OTUy,Alex Vergara Gil,5,alexvergaragil@gmail.com,50,FALSE,21,User,100,100,2,1,1,0,1,0
+MDQ6VXNlcjg4Mjc4NDA=,mark,5,,1917,FALSE,216,User,11,10,1,1,0,0,0,0
+MDQ6VXNlcjIzMzIyMDk=,René Ribaud,5,,134,FALSE,45,User,9,5,10,4,6,0,0,0
+MDQ6VXNlcjI5ODIzMjg=,Timur,5,,30,FALSE,3,User,15,42,3,3,0,6,0,0
+MDQ6VXNlcjEwNDI1ODM0,Antonio Ossa-Guerra,5,,709,TRUE,104,User,139,139,1,0,1,0,0,0
+MDQ6VXNlcjM3MjQ3Ng==,Haoyu Qiu,4,,565,FALSE,376,User,29,12,2,2,0,0,0,0
+MDQ6VXNlcjM4MTcxODA=,Snowcat8436,4,,59,TRUE,10,User,85,85,0,0,0,0,0,0
+MDQ6VXNlcjIwNTgxNjc=,Joshua Levy,jlevy,197,joshua@cal.berkeley.edu,False,4182,User,154838,14591
+MDQ6VXNlcjE2MTQwMDk=,Peter Kokot,petk,2222,peterkokot@gmail.com,False,1119,User,154838,14591
+MDQ6VXNlcjgwOTg0NTI=,Chujie Zeng,Psycho7,0,chujie.zeng@gmail.com,True,86,User,154838,14591
+MDQ6VXNlcjExNTUzMzY=,Stepan Babala,stepan0904,0,stepan0904@gmail.com,False,42,User,154838,14591
+MDQ6VXNlcjMyMjEzNQ==,Éric Guirbal,ericguirbal,40,,False,24,User,154838,14591
+MDQ6VXNlcjYyNjczNDA=,Oleg Berman,olegberman,7,bermanoleg@gmail.com,True,80,User,154838,14591
+MDQ6VXNlcjIyOTE1Mjk=,Nilton Vasques,niltonvasques,0,,True,48,User,154838,14591
+MDQ6VXNlcjg4NTg4NjU=,Anna Damtsa,anna-d,0,,False,15,User,154838,14591
+MDQ6VXNlcjE2MjQ1Mzc=,Ungsik Yun,Ungsik-Yun,0,ungsik.yun@gmail.com,True,20,User,154838,14591
+MDQ6VXNlcjEyMTI3MTY=,Diomidis Spinellis,dspinellis,569,dds@aueb.gr,False,1551,User,154838,14591
+MDQ6VXNlcjc4NjkxMjk=,,lsrom,0,,False,9,User,154838,14591
+MDQ6VXNlcjkwNTQxMw==,spmbt,spmbt,0,,False,18,User,154838,14591
+MDQ6VXNlcjQ1NTAzNTM=,Xu Chunyang,xuchunyang,215,xuchunyang56@gmail.com,True,327,User,154838,14591
+MDQ6VXNlcjEyMTYxNTA0,Martin Folkers,S1SYPHOS,0,hello@twobrain.io,False,33,User,154838,14591
+MDQ6VXNlcjcwMzA2NzE=,ClumsyLee,ClumsyLee,0,,False,104,User,154838,14591
+MDQ6VXNlcjMyMzE5OQ==,Mihai Maruseac,mihaimaruseac,628,mihaimaruseac@google.com,False,837,User,154838,14591
+MDQ6VXNlcjYyNDk0OA==,Lakshmipathi Ganapathi,Lakshmipathi,1,,True,45,User,154838,14591
+MDQ6VXNlcjgxOTI5,Dmytro Kovalov (uk: Дмитро Ковальов),dmytro,12,dmytro@smartpay.co,False,37,User,154838,14591
+MDQ6VXNlcjczOTIz,Fernando Almeida,fernandoalmeida,9,fernando@fernandoalmeida.net,False,87,User,154838,14591
+MDQ6VXNlcjYyMTQ4NjE=,Dongliang Mu,mudongliang,878,dzm91@hust.edu.cn,False,471,User,154838,14591
+MDQ6VXNlcjgxOTk3MTc=,Michael Kwardakov,mkwardakov,0,kwardakov@gmail.com,False,6,User,154838,14591
+MDQ6VXNlcjE0OTcwNTk=,Gernot Pointner,gernd,0,gernot.pointner@googlemail.com,False,25,User,154838,14591
+MDQ6VXNlcjQ1Mjc5Mjg=,Laurent Lyaudet,LLyaudet,373,Laurent.Lyaudet@gmail.com,False,7,User,154838,14591
+MDQ6VXNlcjExODE2OTUy,Alex Vergara Gil,BishopWolf,2,alexvergaragil@gmail.com,False,21,User,154838,14591
+MDQ6VXNlcjg4Mjc4NDA=,mark,mark-i-m,0,,False,216,User,154838,14591
+MDQ6VXNlcjIzMzIyMDk=,René Ribaud,uggla,565,,False,45,User,154838,14591
+MDQ6VXNlcjI5ODIzMjg=,Timur,timacs,0,,False,3,User,154838,14591
+MDQ6VXNlcjEwNDI1ODM0,Antonio Ossa-Guerra,aaossa,125,,True,104,User,154838,14591
+MDQ6VXNlcjM3MjQ3Ng==,Haoyu Qiu,timothyqiu,229,,False,377,User,154838,14591
+MDQ6VXNlcjM4MTcxODA=,Snowcat8436,Snowcat8436,0,,True,10,User,154838,14591
