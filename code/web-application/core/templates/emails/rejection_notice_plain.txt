@@ -1,0 +1,16 @@
+Update on Your Application
+
+Hello {{ candidate_name }},
+
+Thank you for taking the time to complete our coding assessment and for your interest in joining {{ company_name }}.
+
+After careful consideration, we have decided not to move forward with your application at this time. While your profile has many strengths, we are pursuing candidates whose experience more closely aligns with our current requirements.
+
+We value your privacy, and in accordance with our data protection policies, we will be removing your assessment data and personal information from our system.
+
+We appreciate your interest in {{ company_name }} and wish you the best in your job search.
+
+Best regards,
+The Hiring Team at {{ company_name }}
+
+If you have any questions, please contact us at {{ contact_email }}
