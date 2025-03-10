@@ -9,7 +9,7 @@ echo "Building Docker image for code evaluation..."
 cd "$(dirname "$0")"
 
 # Build the Docker image
-docker build -t recruiter-code-evaluator:latest .
+docker build -t hushhushevaluator:latest .
 
 echo "Docker image built successfully!"
 echo "You can now use the image for code evaluation."
